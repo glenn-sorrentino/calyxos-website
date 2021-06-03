@@ -107,6 +107,16 @@
   background-position: center;
 }
 
+.intro.withImage {
+  background: no-repeat right center url('../../../assets/placeholder/mobile.svg');
+  background-size: 40%;
+  background-position-x: calc(100% - var(--spacing-base));
+}
+
+.intro.withImage > * {
+  width: 60%;
+}
+
 /* SECONDARY INTRO */
 
 .secondaryIntro p:last-of-type{

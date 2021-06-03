@@ -269,6 +269,14 @@ p.typeset {
   p.typeset {
     margin: var(--spacing-xsmall) auto var(--spacing-small) auto !important;
   }
+
+  .intro.withImage {
+    background-image: none;
+  }
+
+  .intro.withImage > * {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-height: 768px) {

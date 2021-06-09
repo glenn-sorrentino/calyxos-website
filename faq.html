@@ -1,0 +1,111 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Glenn Sorrentino">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>CalyxOS Frequently Asked Question</title>
+	<link rel="stylesheet" href="design-system/css/style.css">
+
+</head>
+
+<body>
+
+	<header>
+		<a href="#navigation" class="assistiveText">Skip to Navigation</a>
+		<a href="#content" class="assistiveText">Skip to Main Content</a>
+		<div class="wrapper">
+			<div class="logoMark emptyLogo"></div>
+			<h1 class="logo"><a href="#">CalyxOS</a></h1>
+			<nav id="navigation">
+				<a role="button" class="navButton" tabindex="0">
+					<div class="menu"></div>
+				</a>
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="features.html">Features</a></li>
+					<li><a href="install.html">Install CalyxOS</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="#">Community</a></li>
+					<li><a href="#">News</a></li>
+					<li><a role="button" class="btn primaryBtn" href="#" rel="noopener noreferrer nofollow" target="_blank">Contribute</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- HOME - INTRO -->
+
+	<main id="content">
+
+		<section class="secondaryIntro">
+			<div class="wrapper">
+				<h1>Frequently Asked Questions</h1>
+				<p>Get answers to some of the most common questions from the community.</p>
+			</div>
+		</section>
+
+		<!-- HOME - PRIMARY LIST -->
+
+		<section id="section1" class="content wrapper">
+			<div class="contentItem noImage">
+				<div class="description">
+					<div class="icon placeholder"></div>
+					<p>For questions about device support, both for existing and new devices, as well as support timeframe, see <a href="#">Device support</a>.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="section1" class="content wrapper">
+			<div class="contentItem noImage">
+				<div class="description">
+					<h2>Frequently Asked Questions</h2>
+			    <p><a href="#">What are the goals of CalyxOS?</a></p>
+			    <p><a href="#">How do you accomplish encrypting the content of communications?</a></p>
+			    <p><a href="#">What countermeasures do you take against metadata collection?</a></p>
+			    <p><a href="#">How do you deal with the issue of geolocation tracking?</a></p>
+			    <p><a href="#">How do you handle location services in a more private way?</a></p>
+			    <p><a href="#">What does 'de-googled' Android mean?</a></p>
+			    <p><a href="#">Isn't using MicroG to replace Google's Play Services a privacy risk?</a></p>
+			    <p><a href="#">Isn't MicroG a security risk because it requires 'signature spoofing'?</a></p>
+			    <p><a href="#">How is CalyxOS funded?</a></p>
+			    <p><a href="#">How can I back up and restore the software and data on my phone?</a></p>
+			    <p><a href="#">Your device is loading a different Operating System</a></p>
+				</div>
+			</div>
+		</section>
+
+		<section id="section1" class="content wrapper">
+			<div class="contentItem noImage">
+				<div class="description">
+					<h3>Q: What are the goals of CalyxOS?</h3>
+					<p>A: We aspire to accomplish 3 major goals 1) encrypt the content of communications as much as possible 2) take countermeasures against metadata collection 3) take countermeasures against geolocation tracking.</p>
+				</div>
+			</div>
+			<div class="contentItem noImage">
+				<div class="description">
+					<h3>Q: How do you accomplish encrypting the content of communications?</h3>
+					<p>A: We bundle network encryption applications such as Signal for voice and text messaging, Tor Browser for web browsing, Orbot for using Tor as a VPN, two VPN applications, OpenKeychain for OpenPGP support, Conversations, and Briar.</p>
+				</div>
+			</div>
+			<div class="contentItem noImage">
+				<div class="description">
+					<h3>Q: What countermeasures do you take against metadata collection?</h3>
+					<p>A: We encourage the use of the free VPN applications, of Orbot and Tor Browser for hiding the IP address of the phone. We have a feature to optionally disable bluetooth and Wi-Fi when they haven’t been used in a while to avoid proximity tracking. We randomize the Wi-Fi MAC address (on a per network basis) to keep the use of Wi-Fi more anonymous.</p>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="wrapper">
+		<p>This work is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer nofollow">CC BY NC 4.0 license</a>.</p>
+		<p>&copy; 2021 <a href="https://calyxinstitute.net" target="_blank" rel="noreferrer nooopener">Calyx Institute</a>.</p>
+	</footer>
+
+</body>
+
+</html>

@@ -93,6 +93,7 @@ p.caption {
 
 .highlight {
   border-radius: var(--radius-base);
+  padding: var(--spacing-xxsmall);
 }
 
 .code {

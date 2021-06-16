@@ -1,0 +1,19 @@
+I"<p>The first thing a user sees on booting a device for the first time.
+Also known as first run wizard, initial wizard, etc.</p>
+
+<p>Source: https://gitlab.com/calyxos/platform_packages_apps_setupwizard</p>
+
+<p>Forked from LineageOS</p>
+
+<p>Things to consider</p>
+<ul>
+  <li>Prompt to install apps from the local F-Droid repo. See <a href="../F‐Droid">F-Droid#local-repo</a>
+    <ul>
+      <li>An issue with this would be that some apps may have an update right after install.</li>
+      <li>Another thing to do, set installer package name to F-Droid so that it can manage the app later.</li>
+    </ul>
+  </li>
+  <li>Prompt to enable microG. See <a href="../microG">microG</a></li>
+  <li>Ask F-Droid to update the index while the setup process is going on.</li>
+</ul>
+:ET

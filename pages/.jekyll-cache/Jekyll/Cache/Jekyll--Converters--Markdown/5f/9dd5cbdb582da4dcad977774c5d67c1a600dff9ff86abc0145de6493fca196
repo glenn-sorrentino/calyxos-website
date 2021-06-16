@@ -1,0 +1,32 @@
+I"x<h3 id="f-droid">F-Droid</h3>
+
+<ul>
+  <li>Prebuilt</li>
+</ul>
+
+<h3 id="f-droid-priveleged-extension">F-Droid Priveleged Extension</h3>
+
+<ul>
+  <li>Could be changed to prebuilt once F-Droid is set to <code class="language-plaintext highlighter-rouge">PRESIGNED</code></li>
+</ul>
+
+<h3 id="local-repo---httpsgitlabcomcalyxoscalyxosissues5">Local repo - https://gitlab.com/calyxos/calyxos/issues/5</h3>
+
+<ul>
+  <li>A local repo has been created to help with the initial app install during SetupWizard</li>
+</ul>
+
+<p>TODO: Figure out the exact semantics here</p>
+<ul>
+  <li>Ideally, it would be a partial mirror</li>
+  <li>The apps included currently are either from the F-Droid repo, or from the Guardian Project repo, as-is, prebuilt, presigned.</li>
+  <li>Only outlier is Signal, apk grabbed from the website.</li>
+  <li>Should include some basic info about apps, right now all that’s included is a barebones index + the apks themselves, no icons either.</li>
+</ul>
+
+<h3 id="calyx-repo---httpsgitlabcomcalyxoscalyxosissues7">Calyx repo - https://gitlab.com/calyxos/calyxos/issues/7</h3>
+
+<ul>
+  <li>To include apps such as Chromium.</li>
+</ul>
+:ET

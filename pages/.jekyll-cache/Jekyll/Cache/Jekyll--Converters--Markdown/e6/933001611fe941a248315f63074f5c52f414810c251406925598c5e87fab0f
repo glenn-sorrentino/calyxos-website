@@ -1,0 +1,56 @@
+I"ç<h3 id="current">Current</h3>
+
+<p>Pages:</p>
+<ul>
+  <li><a href="../Getting-Started">Getting Started</a></li>
+  <li><a href="../Installing">Installing</a></li>
+  <li><a href="../Building">Building</a></li>
+  <li><a href="../Signing">Signing</a></li>
+  <li><a href="../android-one-devices">Android One devices</a></li>
+  <li><a href="../Browser">Browser</a></li>
+  <li><a href="../Offline-signing">Offline signing</a></li>
+  <li><a href="../microG">microG</a></li>
+  <li><a href="../diff-aosp-calyxos">Changes made in CalyxOS, the differences from AOSP</a></li>
+  <li><a href="../SetupWizard">SetupWizard</a></li>
+  <li><a href="../F-Droid">F-Droid</a></li>
+</ul>
+
+<hr />
+
+<h3 id="deprecated">Deprecated</h3>
+
+<p>Previous Pages: (Deprecated / no longer current)</p>
+<ul>
+  <li><a href="../AOSP-9.0-plan">AOSP 9.0 plan</a></li>
+  <li><a href="../OTA-Updates">OTA Updates</a></li>
+  <li><a href="../mi-a2">Mi A2</a></li>
+  <li><a href="../VMs">VMs</a></li>
+  <li><a href="../Automation">Automation</a></li>
+  <li><a href="../SetupWizard-&amp;-F-Droid-integration">SetupWizard &amp; F-Droid integration</a></li>
+</ul>
+
+<p>TODOS - in no particular order - Obsolete, migrated to https://gitlab.com/calyxos/calyxos/issues</p>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />SetupWizard (fork + remove custom APIs)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />F-Droid Privileged Extension (make it trust system key)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />F-Droid Setupwizard (https://gitlab.com/fdroid/fdroidclient/issues/1546 and <a href="../SetupWizard-&amp;-F-Droid-integration">SetupWizard &amp; F-Droid integration</a>)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Manage scripts (to be mostly done in January during the next security update, roughly based on AndroidHardening/script/manage.sh)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Improve release scripts (vendor/calyx/scripts/release.sh), add key generation / file collection script.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Mi A2 booting signed build (for testing)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Mi A2 bringup (so that it can actually be used)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Browser and Webview (Chromium or maybe Brave) - see <a href="../Browser">Browser</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Reconsider &amp; update default app placement if needed</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Documentation (Changes from AOSP, Build &amp; Installation steps, more as needed)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />F-Droid repo containing the prebundled apps</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />2FA for fingerprint</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Yubikey for device auth</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />apk overlay (e.g. for etesync)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Automated builds - see <a href="../Automation">Automation</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />CI (maybe gitlab ci?)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Incremental builds</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Virtual Machine usage (builds, signing, more) - see <a href="../VMs">VMs</a></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Foreground-only permissions (like we had previously on the Copperhead fork, and also iOS - allow obtaining location only when active)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Signing builds offline - see <a href="../Offline-signing">Offline signing</a> for instructions</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Signing builds using a yubikey - see <a href="../Offline-signing">Offline signing</a></li>
+</ul>
+:ET

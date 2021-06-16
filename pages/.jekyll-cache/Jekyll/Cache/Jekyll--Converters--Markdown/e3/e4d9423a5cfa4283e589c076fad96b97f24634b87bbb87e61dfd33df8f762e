@@ -1,0 +1,56 @@
+I"8<p>CalyxOS Emulator images are now available, which can be used with the Emulator present in Android Studio.</p>
+
+<p>They’re mostly meant for testing apps (especially system included apps such as Datura and Seedvault). They’re <em>not</em> meant for general usage.</p>
+
+<p>URL: <a href="https://release.calyxinstitute.org/sys-img.xml">https://release.calyxinstitute.org/sys-img.xml</a></p>
+
+<p>These images are <code class="language-plaintext highlighter-rouge">userdebug</code> which means you can use <code class="language-plaintext highlighter-rouge">adb root</code>.</p>
+
+<p>Additionally, these aren’t separately signed, which means all the apps are signed using publicly available AOSP “test-keys”, meaning that you can easily test code changes to system apps.</p>
+
+<p><code class="language-plaintext highlighter-rouge">x86</code> and <code class="language-plaintext highlighter-rouge">x86_64</code> images are available currently. <code class="language-plaintext highlighter-rouge">arm64</code> images appear to be currently broken in AOSP, however we’re trying to see if we can fix them. Those will be made available when ready.</p>
+
+<h3 id="steps">Steps</h3>
+
+<p>This emulator image is meant for use with <a href="https://developer.android.com/studio">Android Studio</a></p>
+
+<ol>
+  <li>Launch Android Studio, and open Tools -&gt; SDK Manager</li>
+  <li>Click on “SDK Update Sites”, and then tap the <code class="language-plaintext highlighter-rouge">+</code> plus icon on the left.</li>
+  <li>Type in the above url, i.e. <a href="https://release.calyxinstitute.org/sys-img.xml">https://release.calyxinstitute.org/sys-img.xml</a> and under name enter “CalyxOS”</li>
+  <li>Make sure the checkbox to the left of “CalyxOS” is checked, and then hit Apply or OK.</li>
+  <li>You can now create an AVD with the CalyxOS image.</li>
+  <li>Open “Tools -&gt; AVD Manager”</li>
+  <li>Click “Create Virtual Device” at the bottom, then select hardware.</li>
+  <li>Next, on the “System Image” selection page, click on “x86 Images”.</li>
+  <li>You should see the CalyxOS Images, they will show up as Target: Android 11 (CalyxOS Android System Image).</li>
+  <li>Click “Download” to download the system image, and then hit next.</li>
+  <li>You can now launch the AVD to run CalyxOS.</li>
+</ol>
+
+<p>These images will get updated every month as we tag and release new builds.</p>
+
+<h3 id="sdkmanager-installation">sdkmanager installation</h3>
+
+<p>If you want to install these images using sdkmanager, the strings are:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">"system-images;android-30;calyx;x86"</code></li>
+  <li><code class="language-plaintext highlighter-rouge">"system-images;android-30;calyx;x86_64"</code></li>
+</ul>
+
+<h3 id="docker-images">Docker images</h3>
+
+<p>F-Droid has CI images which have the Android SDK pre-configured with our repos.
+They’re included in the docker image: <code class="language-plaintext highlighter-rouge">registry.gitlab.com/fdroid/ci-images-client</code>
+This means that this can be used to directly install the CalyxOS images and use it for testing / CI.</p>
+
+<p>For more details see: <a href="https://gitlab.com/fdroid/ci-images-client">https://gitlab.com/fdroid/ci-images-client</a></p>
+
+<p>References:</p>
+<ul>
+  <li>https://review.calyxos.org/q/topic:emulator</li>
+  <li>https://source.android.com/setup/create/avd#sharing_avd_system_images_for_others_to_use_with_android_studio</li>
+  <li>https://developer.android.com/studio/intro/update#adding-sites</li>
+  <li>https://developer.android.com/studio/run/managing-avds#createavd</li>
+</ul>
+:ET

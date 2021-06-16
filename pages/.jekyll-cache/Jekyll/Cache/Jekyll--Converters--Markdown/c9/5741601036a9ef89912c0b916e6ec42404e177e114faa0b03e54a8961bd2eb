@@ -1,0 +1,27 @@
+I"=<p>These are instructions to install the OTA updates that are usually delivered directly to your device.</p>
+
+<div class="alert alert-info">
+Note: If you're installing CalyxOS for the first time, you should [[get the factory image instead =&gt; get]] and follow the factory image [[installation instructions =&gt; install]].
+</div>
+
+<p>Installation process:</p>
+<ol>
+  <li>Download the build to a PC with <code class="language-plaintext highlighter-rouge">adb</code> available.</li>
+  <li>Power off the device.</li>
+  <li>On the Pixels, hold volume down + power to launch fastboot mode. On the Mi A2, hold volume up + power to directly go into recovery. Mi A2 users can skip the next step</li>
+  <li>Use the volume buttons to scroll the fastboot menu, and select “Recovery mode”. Use the power button to confirm.</li>
+  <li>You will see an icon (like the one below) with the text “no command”. This is completely <strong>normal</strong>.</li>
+  <li>Hold power, and while keeping power held, press the volume up button and release it.</li>
+  <li>This should bring you to a menu with multiple items, saying “Android Recovery” at the top.</li>
+  <li>Use the volume button to scroll to “Apply update from ADB”. It’ll be the third or fourth item depending on the device. Select it using the power button</li>
+  <li>This will bring you to a black screen with some text at the bottom, at which point the phone is waiting for commands from the PC.</li>
+  <li>Connect your phone to the PC, and run</li>
+  <li><code class="language-plaintext highlighter-rouge">adb sideload the-ota-update-you-downloaded.zip</code></li>
+  <li>This will take a few minutes.</li>
+  <li>When done, select reboot system and you will have it installed.</li>
+</ol>
+
+<p>Step 5 image:</p>
+
+<p><img src="/assets/images/android-recovery.png" alt="android-recovery" /></p>
+:ET

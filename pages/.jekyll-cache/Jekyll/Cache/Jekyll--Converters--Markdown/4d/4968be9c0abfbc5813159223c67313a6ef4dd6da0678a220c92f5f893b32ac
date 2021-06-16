@@ -1,0 +1,116 @@
+I"� <p>CalyxOS includes <a href="https://microg.org/">microG</a> by default, and you get <a href="https://calyxos.org/features/microg/">three choices</a>. You can either keep it enabled (the default), disable it, or login with a Google account.</p>
+
+<p>The latter has been reported to have some issues. We tried to include a potential fix with the <a href="/news/2021/04/08/big-april-update/">April build</a>, but that didn’t work for everyone.</p>
+
+<p>We have been testing a bunch of fixes and finally have something that should hopefully work for everyone. It’s based on code from Vanced microG, which from what we’ve heard seems to work for everyone.</p>
+
+<p>It is now available for testing in our device-specific test F-Droid repos.</p>
+
+<p>These F-Droid repositories get app updates as soon as they’re available, you can add this if you want to help us test them out.</p>
+
+<p>To add it and install the update, simply add the right URL for your device to F-Droid -&gt; Settings -&gt; Repositories -&gt; Plus sign at the top right</p>
+
+<p>You can then try to sign-in to microG by launching it and tapping “Add Account”, and then choosing “Alt Sign in” - that will use this new method to login.</p>
+
+<p>If you want to help, you can let us know what worked for you and what didn’t, through <a href="https://www.reddit.com/r/CalyxOS/">Reddit</a> or <a href="https://matrix.to/#/#CalyxOS:matrix.org">Matrix</a>. For more details, see [[Community =&gt; community]].</p>
+
+<p><br />
+F-Droid test repos:</p>
+<table class="table table-striped download">
+  <tr><th>Device</th><th>URL</th><th>QR Code</th></tr>
+
+  <tr>
+    <td>Pixel 4a (5G) (bramble)</td>
+    <td><a href="https://calyxos.gitlab.io/calyx-fdroid-repo-bramble/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6">https://calyxos.gitlab.io/calyx-fdroid-repo-bramble/fdroid/repo</a></td>
+    <td><a href="/assets/images/gitlab-calyx-fdroid-repo-bramble-qrcode.png">Click to view</a></td>
+  </tr>
+
+  <tr>
+    <td>Pixel 5 (redfin)</td>
+    <td><a href="https://calyxos.gitlab.io/calyx-fdroid-repo-redfin/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6">https://calyxos.gitlab.io/calyx-fdroid-repo-redfin/fdroid/repo</a></td>
+    <td><a href="/assets/images/gitlab-calyx-fdroid-repo-redfin-qrcode.png">Click to view</a></td>
+  </tr>
+
+  <tr>
+    <td>Pixel 4a (sunfish)</td>
+    <td><a href="https://calyxos.gitlab.io/calyx-fdroid-repo-sunfish/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6">https://calyxos.gitlab.io/calyx-fdroid-repo-sunfish/fdroid/repo</a></td>
+    <td><a href="/assets/images/gitlab-calyx-fdroid-repo-sunfish-qrcode.png">Click to view</a></td>
+  </tr>
+
+  <tr>
+    <td>Pixel 4 XL (coral)</td>
+    <td><a href="https://calyxos.gitlab.io/calyx-fdroid-repo-coral/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6">https://calyxos.gitlab.io/calyx-fdroid-repo-coral/fdroid/repo</a></td>
+    <td><a href="/assets/images/gitlab-calyx-fdroid-repo-coral-qrcode.png">Click to view</a></td>
+  </tr>
+
+  <tr>
+    <td>Pixel 4 (flame)</td>
+    <td><a href="https://calyxos.gitlab.io/calyx-fdroid-repo-flame/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6">https://calyxos.gitlab.io/calyx-fdroid-repo-flame/fdroid/repo</a></td>
+    <td><a href="/assets/images/gitlab-calyx-fdroid-repo-flame-qrcode.png">Click to view</a></td>
+  </tr>
+
+  <tr>
+    <td>Pixel 3a XL (bonito)</td>
+    <td><a href="https://calyxos.gitlab.io/calyx-fdroid-repo-bonito/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6">https://calyxos.gitlab.io/calyx-fdroid-repo-bonito/fdroid/repo</a></td>
+    <td><a href="/assets/images/gitlab-calyx-fdroid-repo-bonito-qrcode.png">Click to view</a></td>
+  </tr>
+
+  <tr>
+    <td>Pixel 3a (sargo)</td>
+    <td><a href="https://calyxos.gitlab.io/calyx-fdroid-repo-sargo/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6">https://calyxos.gitlab.io/calyx-fdroid-repo-sargo/fdroid/repo</a></td>
+    <td><a href="/assets/images/gitlab-calyx-fdroid-repo-sargo-qrcode.png">Click to view</a></td>
+  </tr>
+
+  <tr>
+    <td>Pixel 3 XL (crosshatch)</td>
+    <td><a href="https://calyxos.gitlab.io/calyx-fdroid-repo-crosshatch/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6">https://calyxos.gitlab.io/calyx-fdroid-repo-crosshatch/fdroid/repo</a></td>
+    <td><a href="/assets/images/gitlab-calyx-fdroid-repo-crosshatch-qrcode.png">Click to view</a></td>
+  </tr>
+
+  <tr>
+    <td>Pixel 3 (blueline)</td>
+    <td><a href="https://calyxos.gitlab.io/calyx-fdroid-repo-blueline/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6">https://calyxos.gitlab.io/calyx-fdroid-repo-blueline/fdroid/repo</a></td>
+    <td><a href="/assets/images/gitlab-calyx-fdroid-repo-blueline-qrcode.png">Click to view</a></td>
+  </tr>
+
+  <tr>
+    <td>Pixel 2 XL (taimen)</td>
+    <td><a href="https://calyxos.gitlab.io/calyx-fdroid-repo-taimen/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6">https://calyxos.gitlab.io/calyx-fdroid-repo-taimen/fdroid/repo</a></td>
+    <td><a href="/assets/images/gitlab-calyx-fdroid-repo-taimen-qrcode.png">Click to view</a></td>
+  </tr>
+
+  <tr>
+    <td>Pixel 2 (walleye)</td>
+    <td><a href="https://calyxos.gitlab.io/calyx-fdroid-repo-walleye/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6">https://calyxos.gitlab.io/calyx-fdroid-repo-walleye/fdroid/repo</a></td>
+    <td><a href="/assets/images/gitlab-calyx-fdroid-repo-walleye-qrcode.png">Click to view</a></td>
+  </tr>
+
+  <tr>
+    <td>Xiaomi Mi A2 (jasmine_sprout)</td>
+    <td><a href="https://calyxos.gitlab.io/calyx-fdroid-repo-jasmine_sprout/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6">https://calyxos.gitlab.io/calyx-fdroid-repo-jasmine_sprout/fdroid/repo</a></td>
+    <td><a href="/assets/images/gitlab-calyx-fdroid-repo-jasmine_sprout-qrcode.png">Click to view</a></td>
+  </tr>
+
+</table>
+
+<p><br /></p>
+
+<p>Technical:</p>
+
+<p>We enable device registration and cloud messaging for microG by default to make sure that notifications work out of the box.</p>
+
+<p>The <a href="https://review.calyxos.org/c/CalyxOS/platform_external_microg_GmsCore/+/2905">fix</a> included in the [April build](/news/2021/04/08/big-april-update/ tried to disable those two before login, and then re-enable them after login. It seemed to work in some cases, not all.</p>
+
+<p>At the same time, we had heard that <a href="https://github.com/YTVanced/VancedMicroG">Vanced microG</a> had this Huawei login button which seemed to work for everyone. We had already looked at that code once, so we decided to try that approach.</p>
+
+<p>At first, we <a href="https://review.calyxos.org/c/CalyxOS/platform_external_microg_GmsCore/+/3074">tried</a> to spoof just the ‘brand’ reported. AOSP sets it to Android, Google sets it to Google. Didn’t work.</p>
+
+<p>Next, we thought it might be the fingerprint (which contains the build info). Both brand and fingerprint are usually spoofed on custom ROMs for Google Play compatiblity, so we thought that might be it. <a href="https://review.calyxos.org/c/CalyxOS/platform_external_microg_GmsCore/+/3120">Tried</a>, didn’t work.</p>
+
+<p>After that we decided <a href="https://review.calyxos.org/c/CalyxOS/platform_external_microg_GmsCore/+/3016">trying</a> to spoof all of the device details like microG does, didn’t work.</p>
+
+<p>Finally, we settled on just <a href="https://review.calyxos.org/c/CalyxOS/platform_external_microg_GmsCore/+/3125">pulling in</a> the full code from Vanced (something we wanted to do at first but decided to see if the other approaches worked.).
+This is what is being shipped in the APK now.</p>
+
+<p>Note: If you take a brief look at the code, it may seem like microG is sending a lot of details about your device to Google. However, if you look closer, it spoofs a lot of that (it doesn’t even have access to things like the serial number), which means most of the data it sends to Google would match exactly with other devices, making it hard to pick you out.</p>
+:ET

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{% html_lang %}" dir="{% html_dir %}">
+{% include head.html %}
+  <body>
+    {% include masthead.html %}
+    <main id="content">
+      {% include intro.html %}
+      {% include mission.html %}
+      <section class="content primaryContent wrapper">
+        {% include spotlight-features.html %}
+      </section>
+      {% include in_the_news.html %}
+      {% include join.html %}
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

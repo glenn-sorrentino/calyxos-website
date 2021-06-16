@@ -1,0 +1,42 @@
+I"2
+<h1 id="no-longer-current">No longer current</h1>
+
+<p>This document is intended to set forward a plan for forking AOSP 9.0, and making any required changes.</p>
+
+<h2 id="todo-items">TODO items</h2>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Inline kernel building</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />android-prepare-vendor</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />OTA Updates</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Default wallpaper, bootanimation</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />(Temporary) Apps bundled with OS<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Build and sign scripts</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Branding?</li>
+</ul>
+
+<h2 id="list-of-forked-repos-with-purpose-no-longer-up-to-date">List of forked repos with purpose (no longer up to date)</h2>
+<p>| aosp/other repo name | gitlab name | purpose |
+|—————-|————-|———|
+| platform/manifest | platform_manifest | The manifest |
+| platform/build | platform_build | Build system |
+| device/$foo | device_$foo | Device specific changes |
+| kernel/$device | kernel_$device | Inline kernel build + other changes |
+| android-prepare-vendor<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> | vendor_android-prepare-vendor | Blob scripts |</p>
+
+<p>References:</p>
+
+<ul>
+  <li>https://source.android.com/setup/start/build-numbers.html#source-code-tags-and-builds</li>
+</ul>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Will be via F-Droid in the future, see https://gitlab.com/fdroid/fdroidclient/issues/1546 <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>https://github.com/anestisb/android-prepare-vendor <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+:ET

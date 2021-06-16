@@ -1,0 +1,218 @@
+I"<p>A quick, non comprehensive list of the changes from AOSP</p>
+
+<p>Overview:</p>
+<ul>
+  <li>Inline kernel building
+*</li>
+</ul>
+
+<p>Forked AOSP repos:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Repo</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>manifest</td>
+      <td>The manifest, containing list of repos</td>
+    </tr>
+    <tr>
+      <td>build</td>
+      <td>Build system changes</td>
+    </tr>
+    <tr>
+      <td>build/soong</td>
+      <td>Build system changes</td>
+    </tr>
+    <tr>
+      <td>bionic</td>
+      <td>Build fix with inline kernel build</td>
+    </tr>
+    <tr>
+      <td>device/common</td>
+      <td>Include avb with factory image</td>
+    </tr>
+    <tr>
+      <td>device/google/marlin</td>
+      <td>Pixel 1 &amp; 1 XL</td>
+    </tr>
+    <tr>
+      <td>device/google/muskie</td>
+      <td>Pixel 2 (common)</td>
+    </tr>
+    <tr>
+      <td>device/google/taimen</td>
+      <td>Pixel 2 XL</td>
+    </tr>
+    <tr>
+      <td>device/google/wahoo</td>
+      <td>Pixel 2 &amp; 2 XL (common)</td>
+    </tr>
+    <tr>
+      <td>frameworks/av</td>
+      <td>For Mi A2, TBD</td>
+    </tr>
+    <tr>
+      <td>frameworks/base</td>
+      <td>microG support</td>
+    </tr>
+    <tr>
+      <td>hardware/qcom/audio</td>
+      <td>For Mi A2, allow building</td>
+    </tr>
+    <tr>
+      <td>hardware/qcom/bootctrl</td>
+      <td>For Mi A2, TBD</td>
+    </tr>
+    <tr>
+      <td>hardware/qcom/display</td>
+      <td>For Mi A2, allow building</td>
+    </tr>
+    <tr>
+      <td>hardware/qcom/gps</td>
+      <td>For Mi A2, TBD</td>
+    </tr>
+    <tr>
+      <td>hardware/qcom/media</td>
+      <td>For Mi A2, allow building</td>
+    </tr>
+    <tr>
+      <td>hardware/qcom/msm8998</td>
+      <td>For Mi A2, allow building</td>
+    </tr>
+    <tr>
+      <td>kernel/google/marlin</td>
+      <td>Pixel 1</td>
+    </tr>
+    <tr>
+      <td>kernel/google/wahoo</td>
+      <td>Pixel 2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>New repos:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Repo</th>
+      <th>Purpose</th>
+      <th>Upstream</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>device/qcom/sepolicy</td>
+      <td>For Mi A2</td>
+      <td>LineageOS</td>
+    </tr>
+    <tr>
+      <td>device/xiaomi/jasmine</td>
+      <td>Mi A2</td>
+      <td>xiaomi-sdm660</td>
+    </tr>
+    <tr>
+      <td>device/xiaomi/sdm660-common</td>
+      <td>Mi A2 (common)</td>
+      <td>xiaomi-sdm660</td>
+    </tr>
+    <tr>
+      <td>external/ant-wireless/ant_native</td>
+      <td>For Mi A2, TBD</td>
+      <td>LineageOS</td>
+    </tr>
+    <tr>
+      <td>external/ant-wireless/antradio-library</td>
+      <td>For Mi A2, TBD</td>
+      <td>LineageOS</td>
+    </tr>
+    <tr>
+      <td>external/ant-wireless/ant_service</td>
+      <td>For Mi A2, TBD</td>
+      <td>LineageOS</td>
+    </tr>
+    <tr>
+      <td>kernel/xiaomi/jasmine</td>
+      <td>Mi A2</td>
+      <td>xiaomi-sdm660</td>
+    </tr>
+    <tr>
+      <td>packages/apps/F-DroidPrivelegedExtension</td>
+      <td>For F-Droid</td>
+      <td>fdroid</td>
+    </tr>
+    <tr>
+      <td>packages/apps/SetupWizard</td>
+      <td>The first run wizard</td>
+      <td>LineageOS</td>
+    </tr>
+    <tr>
+      <td>packages/apps/Updater</td>
+      <td>OTA Updater</td>
+      <td>AndroidHardening</td>
+    </tr>
+    <tr>
+      <td>packages/resources/devicesettings</td>
+      <td>For Mi A2</td>
+      <td>LineageOS</td>
+    </tr>
+    <tr>
+      <td>prebuilts/calyx</td>
+      <td>Prebuilt apps</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>vendor/android-prepare-vendor</td>
+      <td>Pixel proprietaries</td>
+      <td>anestisb</td>
+    </tr>
+    <tr>
+      <td>vendor/calyx</td>
+      <td>Calyx Vendor</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>vendor/calyx-tmp</td>
+      <td>Temporary Calyx vendor</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>vendor/qcom/opensource/audio</td>
+      <td>For Mi A2</td>
+      <td>LineageOS</td>
+    </tr>
+    <tr>
+      <td>vendor/qcom/opensource/cryptfs_hw</td>
+      <td>For Mi A2</td>
+      <td>LineageOS</td>
+    </tr>
+    <tr>
+      <td>vendor/qcom/opensource/dataservices</td>
+      <td>For Mi A2</td>
+      <td>LineageOS</td>
+    </tr>
+    <tr>
+      <td>vendor/qcom/opensource/interfaces</td>
+      <td>For Mi A2</td>
+      <td>LineageOS</td>
+    </tr>
+    <tr>
+      <td>calyxos.wiki</td>
+      <td>This wiki :smile:</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Note:</p>
+<ul>
+  <li>Repos marked as TBD might get removed in the future.</li>
+  <li>A lot of the new repos are forked from LineageOS</li>
+  <li>The repos marked “For Mi A2” will get further clarification later.</li>
+</ul>
+:ET

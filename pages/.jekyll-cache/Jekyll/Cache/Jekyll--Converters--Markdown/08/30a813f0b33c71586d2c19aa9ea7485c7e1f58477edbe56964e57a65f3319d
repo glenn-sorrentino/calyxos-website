@@ -1,0 +1,109 @@
+I"V<div class="alert alert-info">
+<b>NOTE:</b> In the USA there are two variants of the Google Pixel phones: The Google unlocked version, and the Verizon one. The Verizon one is unfortunately locked in such a way (boot loader locked) that you cannot install another operating system on it. The only way to tell is to attempt to unlock the bootloader of the phone. If you can enable "OEM unlocking" then it's an unlocked version. If "OEM unlocking" is greyed out and not toggle-able then you have the Verizon version.
+</div>
+
+<div class="alert alert-info">
+<b>NOTE:</b>  The Pixel 4a 5G is not supported yet. Do not try to install the Pixel 4a (sunfish) image on a Pixel 4a 5G (bramble). It will not work, and may lead to a non-functional device
+</div>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+  <li>You should have at least 2GB of free memory available on the PC.</li>
+  <li>You need the unlocked variant of one of the supported devices, not a locked carrier specific variant.</li>
+</ul>
+
+<p>It’s best practice to update the stock OS on the device to make sure it’s running the latest version before proceeding with these instructions. You can just connect the device to the internet, and let it auto update to the latest version available. You can check for updates by opening the Settings app, then near the bottom tapping System ➔ Advanced ➔ System Update.</p>
+
+<h2 id="obtaining-fastboot">Obtaining fastboot</h2>
+
+<p>You need an updated copy of the <code class="language-plaintext highlighter-rouge">fastboot</code> tool and it needs to be included in your PATH environment variable.</p>
+
+<p>You can download the official releases of platform-tools from Google. You can either obtain these as part of the standalone SDK or Android Studio. For one time usage, it’s easiest to obtain the latest standalone platform-tools release, extract it and add it to your <code class="language-plaintext highlighter-rouge">PATH</code> in the current shell. For example:</p>
+
+<h3 id="download-links">Download links</h3>
+
+<p><a href="https://dl.google.com/android/repository/platform-tools_r30.0.2-linux.zip">Linux</a>
+<a href="https://dl.google.com/android/repository/platform-tools_r30.0.2-darwin.zip">MacOS</a>
+<a href="https://dl.google.com/android/repository/platform-tools_r30.0.2-windows.zip">Windows</a></p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>unzip platform-tools_r30.0.2-linux.zip
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$PWD</span><span class="s2">/platform-tools:</span><span class="nv">$PATH</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<p>Sample output from <code class="language-plaintext highlighter-rouge">fastboot --version</code> afterwards:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fastboot version 30.0.2-6538114
+Installed as /home/username/downloads/platform-tools/fastboot
+</code></pre></div></div>
+
+<p>Don’t proceed with the installation process until this is set up properly in your current shell. Also, make sure the version matches the above or is newer/higher than this, as older versions are unsuitable for flashing.</p>
+
+<h2 id="enabling-oem-unlocking">Enabling OEM unlocking</h2>
+
+<p>OEM unlocking needs to be enabled from within the operating system.
+Enable the developer settings menu by going to Settings ➔ System ➔ About phone and tapping on the build number menu entry until developer mode is enabled.Next, go to Settings ➔ System ➔ Advanced ➔ Developer settings and toggle on the ‘Enable OEM unlocking’ setting. This may require internet access on some devices</p>
+
+<h2 id="unlocking-the-bootloader">Unlocking the bootloader</h2>
+
+<p>First, reboot into the bootloader interface. You can do this by turning off the device and then turning it on by holding both the Volume Down and Power buttons.
+Alternately, enable USB Debugging on the device and issue the following command:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb reboot bootloader
+</code></pre></div></div>
+
+<p>Verify the device is in fastboot mode and detected by your Computer:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fastboot devices
+</code></pre></div></div>
+
+<p>The bootloader now needs to be unlocked to allow flashing new images:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fastboot flashing unlock
+</code></pre></div></div>
+
+<p>The command needs to be confirmed on the device, using the volume and power buttons.</p>
+
+<h2 id="flashing-factory-images">Flashing factory images</h2>
+
+<p>Reboot into the bootloader interface to begin the flashing procedure.
+Next, extract the factory images and run the script to flash them. Note that the <code class="language-plaintext highlighter-rouge">fastboot</code> command run by the flashing script requires a fair bit of free space in a temporary directory, which defaults to <code class="language-plaintext highlighter-rouge">/tmp</code>:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>unzip crosshatch-factory-2019.06.23.05.zip
+<span class="nb">cd </span>crosshatch-pq3a.190605.003
+./flash-all.sh
+</code></pre></div></div>
+
+<p>Use a different temporary directory if your <code class="language-plaintext highlighter-rouge">/tmp</code> doesn’t have enough space available:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>tmp
+<span class="nv">TMPDIR</span><span class="o">=</span><span class="s2">"</span><span class="nv">$PWD</span><span class="s2">/tmp"</span> ./flash-all.sh
+</code></pre></div></div>
+
+<p>Wait for the flashing process to complete and for the device to boot up using the new operating system. You should now proceed to locking the bootloader before using the device as locking wipes the data again.</p>
+
+<h2 id="re-locking-the-bootloader">Re-locking the bootloader</h2>
+
+<p>Re-locking the bootloader is important as it enables full verified boot. It also prevents using fastboot to flash, format or erase partitions. Verified boot will detect modifications to any of the OS partitions and it will prevent reading any modified / corrupted data.
+In the bootloader interface, set it to locked:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fastboot flashing lock
+</code></pre></div></div>
+
+<p>The command needs to be confirmed on the device since it needs to perform a factory reset.
+Unlocking the bootloader again will perform a factory reset.</p>
+
+<h2 id="disabling-oem-unlocking">Disabling OEM unlocking</h2>
+
+<p>OEM unlocking can be disabled again in the developer settings menu within the operating system after booting it up again.</p>
+
+<p>At this point, your device should be all setup and ready for usage with CalyxOS.</p>
+
+<h2 id="replacing-calyxos-with-the-stock-os">Replacing CalyxOS with the stock OS</h2>
+
+<p>Installation of the stock OS via the stock factory images is the same process described above. However, before locking, there’s an additional step to fully revert the device to a clean factory state on modern devices like the Pixel 2, Pixel 2 XL, Pixel 3, Pixel 3 XL, Pixel 3a and Pixel 3a XL.</p>
+
+<p>This step needs to be performed by rebooting to the bootloader like before, and then running:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fastboot erase avb_custom_key
+</code></pre></div></div>
+:ET

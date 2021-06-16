@@ -1,0 +1,27 @@
+I"Å<p>CalyxOS includes <a href="https://github.com/microG">microG</a> by default. However, since it is an Android app built using the gradle build system, which the AOSP build system does not support, we build it separately and include a prebuilt APK for the OS build.</p>
+
+<h4 id="preparation">Preparation</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~/calyxos/android11-qpr1
+cd external/microg/GmsCore
+git remote add upstream https://github.com/microg/GmsCOre
+git fetch --tags
+export JAVA_OPTS="-Xmx2048m"
+echo 'mapbox.key=apikey' &gt; local.properties
+</code></pre></div></div>
+
+<p>In our builds we fail if there is no Mapbox API key to avoid shipping a build without it, as that will break Maps inside apps.</p>
+
+<p>For development, you can simply put in a dummy value like the one above.</p>
+
+<h4 id="build">Build</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./gradlew --no-daemon build
+</code></pre></div></div>
+
+<h4 id="copy">Copy</h4>
+
+<p>We use the variant with mapbox and with nearby.</p>
+
+<p>You can copy <code class="language-plaintext highlighter-rouge">play-services-core-withMapbox-withNearby-release-unsigned.apk</code> to <code class="language-plaintext highlighter-rouge">prebuilts/calyx/microg/GmsCore/GmsCore.apk</code> for it to be included in the OS build.</p>
+:ET

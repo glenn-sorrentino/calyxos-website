@@ -1,0 +1,36 @@
+I"�<p>The May update introduced a new Work Profile feature, allowing you to create a work profile directly from the Settings app without having to install any third party apps.</p>
+
+<p>This feature is available under Settings -&gt; System -&gt; Multiple users - &gt; Add user or profile -&gt; Work profile</p>
+
+<p>However, some of you may have noticed some crashes when trying to access certain functionality within the profile. We have identified the root cause and fixed it for new profiles going forward, till then you can run the following commands from your computer to fix it right away.</p>
+
+<p>Run this from a computer where you have ‘adb’ installed:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb shell pm list users
+</code></pre></div></div>
+
+<p>That will output something like:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Users:
+        UserInfo{0:Owner:c13} running
+        UserInfo{10:New Profile:1030} running
+        UserInfo{11:Guest:404}
+</code></pre></div></div>
+
+<p>Note the <code class="language-plaintext highlighter-rouge">10</code> here, that is the user id of the Work profile.</p>
+
+<p>Now, you can run the following commands to enable certain apps in the profile to fix some of the crashing. These apps are always required to be present in the profile but were missed due to an oversight which is what caused the crashes.</p>
+
+<p>Replace <code class="language-plaintext highlighter-rouge">10</code> with the user id you saw above:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb shell pm install-existing --user 10 com.android.contacts
+adb shell pm install-existing --user 10 com.android.settings
+adb shell pm install-existing --user 10 com.android.providers.downloads
+adb shell pm install-existing --user 10 com.android.providers.downloads.ui
+adb shell pm install-existing --user 10 com.android.documentsui
+</code></pre></div></div>
+
+<p>This is a one time fix and won’t be required in future builds.</p>
+
+<p>Our apologies for the inconvenience, and thank you for understanding!</p>
+:ET

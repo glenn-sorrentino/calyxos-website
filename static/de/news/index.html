@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CalyxOS News</title>
+  <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+  <meta name="description" content="CalyxOS News" /><link rel="stylesheet" href="../design-system/css/style.css">
+  <!-- <link rel="stylesheet" href="/assets/main.css"> -->
+  <link rel="alternate" type="application/rss+xml" title="CalyxOS" href="/feed.xml">
+  <link rel="alternate" hreflang="en" href="/en/news/" />
+  <link rel="alternate" hreflang="de" href="/de/news/" />
+  <link rel="alternate" hreflang="es" href="/es/news/" />
+  <link rel="alternate" hreflang="pt" href="/pt/news/" />
+</head>
+
+  <body>
+    <header>
+  <a href="#navigation" class="assistiveText">Skip to Navigation</a>
+  <a href="#content" class="assistiveText">Skip to Main Content</a>
+  <div class="wrapper">
+    <div class="logoMark emptyLogo"></div>
+    <h1 class="logo"><a href="#" class="navbar-brand" href="/de/">CalyxOS</a></h1>
+    <nav class="navbar navbar-expand-sm">
+      <input type="checkbox" class="toggle" id="navbar-visible"></input>
+      <ul class="navbar-nav">
+        <li class="nav-level-0 nav-item">
+  <a class="nav-level-0 nav-link " href="/de/about/">About</a>
+</li>
+<li class="nav-level-0 nav-item">
+  <a class="nav-level-0 nav-link " href="/de/features/">Features</a>
+</li>
+<li class="nav-level-0 nav-item">
+  <a class="nav-level-0 nav-link " href="/de/faq/">FAQ</a>
+</li>
+<li class="nav-level-0 nav-item">
+  <a class="nav-level-0 nav-link " href="/de/community/">Community</a>
+</li>
+<li class="nav-level-0 nav-item">
+  <a class="nav-level-0 nav-link " href="/de/contribute/">Contribute</a>
+</li>
+<li class="nav-level-0 nav-item">
+  <a class="nav-level-0 nav-link active" href="/de/news/">News</a>
+</li>
+        <li><a role="button" class="btn primaryBtn" href="/de/get">Get CalyxOS</a></li>
+      </ul>
+      <label class="toggle navbar-toggle" for="navbar-visible"></label>
+    </nav>
+  </div>
+</header>
+
+    <main>
+      <section class="secondaryIntro">
+  			<div class="wrapper">
+  				<h1>CalyxOS News</h1>
+  				<p>Learn about some of the ways we protect your privacy.</p>
+  			</div>
+  		</section>
+      <section class="content primaryContent wrapper">
+  			
+  <div class="contentItem noImage">
+    <div class="description">
+      <h2><a href="#" >June Security update and Feature drop</a></h2>
+      <p class="meta"><a href="/de/news/2021/06/10/june-update/">2021-06-10</a></p>
+      <div class="post-content"><p>The June update is here, with even more features and bug fixes.</p>
+
+<p>Changelog:</p>
+<ul>
+  <li>CalyxOS 2.6.1 - Android 11</li>
+  <li>June Security update and Feature drop (2021-06-05)</li>
+  <li>Work profile v2: Big improvements to work profile creation, resolving issues with certain essential system apps not being enabled in the profile, not being able to see work profile apps in the recent screen, and work needed to support future work profile features.</li>
+  <li>For the best experience, we would recommend deleting any profiles you created in the May build and starting over with a fresh new profile.</li>
+  <li>Enable SeedVault backups for work profile, from Settings (in the main user) -&gt; System -&gt; Backup -&gt; Work. Do note that USB is not available in work profiles due as Android does not support that.</li>
+  <li>Handle microG better in work profile, enabling / disabling all of it’s companion apps as needed.</li>
+  <li>Firewall (Datura): Support work profile apps, improve icon and fix sorting of apps.</li>
+  <li>AMOLED dark mode, aka pure black background for dark theme. Enable at Settings -&gt; Display -&gt; Dark theme -&gt; Pure black</li>
+  <li>Network traffic monitor feature, which shows network traffic indication in the status bar. Enable from Settings -&gt; System -&gt; Status bar -&gt; Network traffic monitor</li>
+  <li>Status bar icon configuration, allowing you to choose what to show. Configure in Settings -&gt; System -&gt; Status bar -&gt; System icons</li>
+  <li>Use rounded corners in the system where appropriate.</li>
+  <li>Include a Maps app in the OS, Organic Maps. You can install it from F-Droid</li>
+  <li>Bring in the Recorder app from LineageOS, allowing you to create sound recordings.</li>
+  <li>F-Droid: Handle Trichrome updates better, fixing an issue with Trichrome Library updates where they would always show up as an update even after updating.</li>
+  <li>Dialer: Use a restrictive WebView for Menu -&gt; Helplines links, which clears it’s history when you’re done to avoid leaving any traces. Also add additional categories for the helplines.</li>
+  <li>Panic trigger (Ripple): This will no longer show up as an update in Aurora Store</li>
+  <li>Music (Eleven): Bug fixes and performance improvements</li>
+  <li>You can also create screen recordings using the built-in recorder from the quick settings (what you see down the status bar)</li>
+  <li>microG: Implement Font provider to support more applications, such as Google Fi</li>
+  <li>microG: Update to v0.2.19.211515</li>
+  <li>Chromium: Switch to 64-bit builds on all devices.</li>
+  <li>Chromium: Update 91.0.4472.88</li>
+  <li>Updates for all other included apps.</li>
+  <li>Updated translations for all apps, and the OS.</li>
+</ul>
+
+<p>Note:
+A2 Firmware is from September 2020 since upgrading to versions after that
+requires a factory reset.</p>
+
+<div class="alert alert-info">
+<h4>Security update notes</h4>
+<ul>
+<li>The Pixels 3, 3 XL, 3a, 3a XL, 4, 4 XL, 4a, 5, 4a (5G) contain the full security patch, as they are still being updated by Google.</li>
+<li>The Pixels 2 and 2 XL are not being updated by Google anymore, so they only contain the fixes to the open source components, such as the OS code and the Linux kernel. Proprietary components such as the bootloader, modem firmware, and other firmware no longer get updates.</li>
+<li>The Xiaomi Mi A2 is still getting security updates, but those are Android 10 and usually released towards the end of the month, whereas CalyxOS is Android 11 and releases the updates right as they're available. This means that the A2 lags behind slightly, by a month or two, in getting security updates for proprietary components.</li>
+</ul>
+</div>
+</div>
+    </div>
+  </div>
+
+  <div class="contentItem noImage">
+    <div class="description">
+      <h2><a href="#" >CalyxOS Emulator Images</a></h2>
+      <p class="meta"><a href="/de/news/2021/05/27/emulator-images/">2021-05-27</a></p>
+      <div class="post-content"><p>CalyxOS Emulator images are now available, which can be used with the Emulator present in Android Studio.</p>
+
+<p>They’re mostly meant for testing apps (especially system included apps such as Datura and Seedvault). They’re <em>not</em> meant for general usage.</p>
+
+<p>URL: <a href="https://release.calyxinstitute.org/sys-img.xml">https://release.calyxinstitute.org/sys-img.xml</a></p>
+
+<p>These images are <code class="language-plaintext highlighter-rouge">userdebug</code> which means you can use <code class="language-plaintext highlighter-rouge">adb root</code>.</p>
+
+<p>Additionally, these aren’t separately signed, which means all the apps are signed using publicly available AOSP “test-keys”, meaning that you can easily test code changes to system apps.</p>
+
+<p><code class="language-plaintext highlighter-rouge">x86</code> and <code class="language-plaintext highlighter-rouge">x86_64</code> images are available currently. <code class="language-plaintext highlighter-rouge">arm64</code> images appear to be currently broken in AOSP, however we’re trying to see if we can fix them. Those will be made available when ready.</p>
+
+<h3 id="steps">Steps</h3>
+
+<p>This emulator image is meant for use with <a href="https://developer.android.com/studio">Android Studio</a></p>
+
+<ol>
+  <li>Launch Android Studio, and open Tools -&gt; SDK Manager</li>
+  <li>Click on “SDK Update Sites”, and then tap the <code class="language-plaintext highlighter-rouge">+</code> plus icon on the left.</li>
+  <li>Type in the above url, i.e. <a href="https://release.calyxinstitute.org/sys-img.xml">https://release.calyxinstitute.org/sys-img.xml</a> and under name enter “CalyxOS”</li>
+  <li>Make sure the checkbox to the left of “CalyxOS” is checked, and then hit Apply or OK.</li>
+  <li>You can now create an AVD with the CalyxOS image.</li>
+  <li>Open “Tools -&gt; AVD Manager”</li>
+  <li>Click “Create Virtual Device” at the bottom, then select hardware.</li>
+  <li>Next, on the “System Image” selection page, click on “x86 Images”.</li>
+  <li>You should see the CalyxOS Images, they will show up as Target: Android 11 (CalyxOS Android System Image).</li>
+  <li>Click “Download” to download the system image, and then hit next.</li>
+  <li>You can now launch the AVD to run CalyxOS.</li>
+</ol>
+
+<p>These images will get updated every month as we tag and release new builds.</p>
+
+<h3 id="sdkmanager-installation">sdkmanager installation</h3>
+
+<p>If you want to install these images using sdkmanager, the strings are:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">"system-images;android-30;calyx;x86"</code></li>
+  <li><code class="language-plaintext highlighter-rouge">"system-images;android-30;calyx;x86_64"</code></li>
+</ul>
+
+<h3 id="docker-images">Docker images</h3>
+
+<p>F-Droid has CI images which have the Android SDK pre-configured with our repos.
+They’re included in the docker image: <code class="language-plaintext highlighter-rouge">registry.gitlab.com/fdroid/ci-images-client</code>
+This means that this can be used to directly install the CalyxOS images and use it for testing / CI.</p>
+
+<p>For more details see: <a href="https://gitlab.com/fdroid/ci-images-client">https://gitlab.com/fdroid/ci-images-client</a></p>
+
+<p>References:</p>
+<ul>
+  <li>https://review.calyxos.org/q/topic:emulator</li>
+  <li>https://source.android.com/setup/create/avd#sharing_avd_system_images_for_others_to_use_with_android_studio</li>
+  <li>https://developer.android.com/studio/intro/update#adding-sites</li>
+  <li>https://developer.android.com/studio/run/managing-avds#createavd</li>
+</ul>
+</div>
+    </div>
+  </div>
+
+  <div class="contentItem noImage">
+    <div class="description">
+      <h2><a href="#" >Community update</a></h2>
+      <p class="meta"><a href="/de/news/2021/05/27/community-update/">2021-05-27</a></p>
+      <div class="post-content"><p>We have changed how the setup of the various <a href="/de/community/">communication channels</a> over the last week.</p>
+
+<p>Matrix will be the primary medium of communication going forward.</p>
+
+<p>There are now Telegram groups for all 5 Matrix channels, bridged using <a href="https://t2bot.io/telegram/">t2bot.io</a></p>
+<ul>
+  <li>On Matrix, Telegram messages will appear just like any other message.</li>
+  <li>On Telegram, Matrix messages will appear to be sent by “Matrix Telegram Bridge” -&gt; <code class="language-plaintext highlighter-rouge">@matrix_t2bot</code></li>
+</ul>
+
+<p>Additionally, the Matrix channels are also bridged to IRC on <a href="https://libera.chat">Libera.chat</a> using <a href="https://github.com/42wim/matterbridge">Matterbridge</a></p>
+<ul>
+  <li>On Matrix, IRC messages will appear to be sent by “SepalBot” -&gt; <code class="language-plaintext highlighter-rouge">@sepalbot:matrix.org</code></li>
+  <li>On IRC, Matrix messages will appear to be sent by “SepalBot”</li>
+</ul>
+
+<p><br /></p>
+
+<h2 id="all-channels-public-and-unencrypted">All channels, public and unencrypted</h2>
+
+<ul>
+  <li><strong>calyxos:</strong> The main channel
+    <ul>
+      <li>Matrix: <a href="https://app.element.io/#/room/#CalyxOS:matrix.org">#CalyxOS:matrix.org</a>, OR</li>
+      <li>Telegram: <a href="https://t.me/CalyxOSpublic">CalyxOSpublic</a>, OR</li>
+      <li>IRC: <code class="language-plaintext highlighter-rouge">#calyxos</code> on <a href="https://libera.chat">Libera.chat</a></li>
+    </ul>
+  </li>
+  <li><strong>calyxos-offtopic:</strong> For all off-topic conversations
+    <ul>
+      <li>Matrix: <a href="https://app.element.io/#/room/#calyxos-offtopic:matrix.org">#calyxos-offtopic:matrix.org</a>, OR</li>
+      <li>Telegram: <a href="https://t.me/CalyxOSOffTopic">CalyxOSOfftopic</a>, OR</li>
+      <li>IRC: <code class="language-plaintext highlighter-rouge">#calyxos-offtopic</code> on <a href="https://libera.chat">Libera.chat</a></li>
+    </ul>
+  </li>
+  <li><strong>calyxos-feeds:</strong> Live feed of code commits / gitlab activity / reddit posts
+    <ul>
+      <li>Matrix: <a href="https://app.element.io/#/room/#calyxos-feeds:matrix.org">#calyxos-feeds:matrix.org</a>, OR</li>
+      <li>Telegram: <a href="https://t.me/CalyxOSFeeds">CalyxOSFeeds</a>, OR</li>
+      <li>IRC: <code class="language-plaintext highlighter-rouge">#calyxos-feeds</code> on <a href="https://libera.chat">Libera.chat</a></li>
+    </ul>
+  </li>
+  <li><strong>calyxos-dev:</strong> For development related discussion
+    <ul>
+      <li>Matrix: <a href="https://app.element.io/#/room/#calyxos-dev:matrix.org">#calyxos-dev:matrix.org</a>, OR</li>
+      <li>Telegram: <a href="https://t.me/CalyxOSDev">CalyxOSDev</a>, OR</li>
+      <li>IRC: <code class="language-plaintext highlighter-rouge">#calyxos-dev</code> on <a href="https://libera.chat">Libera.chat</a></li>
+    </ul>
+  </li>
+  <li><strong>calyxos-infra:</strong> For infrastructure related discussion
+    <ul>
+      <li>Matrix: <a href="https://app.element.io/#/room/#calyxos-infra:matrix.org">#calyxos-infra:matrix.org</a>, OR</li>
+      <li>Telegram: <a href="https://t.me/CalyxOSInfra">CalyxOSInfra</a>, OR</li>
+      <li>IRC: <code class="language-plaintext highlighter-rouge">#calyxos-infra</code> on <a href="https://libera.chat">Libera.chat</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="matrix-space">Matrix Space</h3>
+
+<p>Matrix has a new <a href="https://element.io/blog/spaces-the-next-frontier/">spaces features</a>, which lets you view all these rooms together.</p>
+
+<p>We’ve created a <a href="https://app.element.io/#/room/!LuDyVhhVhiOBRTnSbL:matrix.org">CalyxOS space</a>.</p>
+</div>
+    </div>
+  </div>
+
+  <div class="contentItem noImage">
+    <div class="description">
+      <h2><a href="#" >Security updates</a></h2>
+      <p class="meta"><a href="/de/news/2021/05/14/security-updates/">2021-05-14</a></p>
+      <div class="post-content"><p>Monthly security updates are an important tool to keep users safe and protect their devices. CalyxOS provides timely monthly updates for all supported devices. Let’s walk through how the process works.</p>
+
+<p>TL;DR: CalyxOS integrates monthly updates ASAP. If you have a Pixel 3 or newer, you get the full security update. If you have a Pixel 2 or Mi A2, we are unable to update some proprietary components, but all of the open source parts are kept up to date.</p>
+
+<h3 id="aosp">AOSP</h3>
+
+<p>Android Open Source Project - the base for CalyxOS.</p>
+
+<p>Google usually releases the security update on the first Monday of each month, which means it was May 3rd this month. This is available in two parts, one are the new builds for all support Pixel devices (Pixel 3 and newer currently), and the other is source code updates to AOSP.</p>
+
+<p>That is where it starts for CalyxOS - we wait for the source code to be released to AOSP, and then get started on merging the changes into CalyxOS.</p>
+
+<h3 id="proprietary-bits">Proprietary bits</h3>
+
+<p>All current devices need a good sprinkling of proprietary code to even boot and have full hardware functionality. We cannot make any changes ourselves to these files, and thus we have to rely on the manufacturer to provide updates.
+Google provides monthly updates for all supported devices, which currently means the Pixel 3 and newer devices.</p>
+
+<p>The <a href="https://en.wikipedia.org/wiki/Proprietary_device_driver">proprietary bits</a> can be divided into two parts:</p>
+
+<h4 id="1-blobs">1. Blobs</h4>
+
+<p>The various proprietary drivers needed for the device to work. This includes the parts needed to make the camera work, eSIM, graphics, amongst other things.</p>
+
+<h4 id="2-firmware--bootloader">2. Firmware / Bootloader</h4>
+
+<p>The other part of the proprietary components, responsible for booting the device and also controlling the various components such as the modem.</p>
+
+<h3 id="device-status">Device status</h3>
+
+<p>CalyxOS currently supports 12 devices, and some of them have their own device-specific quirks.</p>
+
+<h4 id="pixels-4a-5g-5-4a-4-xl-4-3a-xl-3a-3-xl-3">Pixels 4a (5G), 5, 4a, 4 XL, 4, 3a XL, 3a, 3 XL, 3</h4>
+
+<p>These devices are still supported by Google, meaning they get timely monthly security updates, and thus we are able to include all the various security fixes in our builds. All components, both proprietary and open source are kept up to date by Google and hence we’re able provide all of that in our releases.</p>
+
+<h4 id="pixels-2-xl-2">Pixels 2 XL, 2</h4>
+
+<p>Google stopped updating this device late 2020, which means that it no longer gets any updates for the proprietary components.</p>
+
+<p>What we can update:</p>
+<ul>
+  <li>The OS code, as it common for all.</li>
+  <li>The kernel, since it’s open source.</li>
+</ul>
+
+<p>What we cannot update further:</p>
+<ul>
+  <li>The proprietary bits, both the blobs and firmware / bootloader are stuck on the October 2020 version.</li>
+</ul>
+
+<h4 id="xiaomi-mi-a2">Xiaomi Mi A2</h4>
+
+<p>The A2 being an Android One device was a big part of why we chose to support it, since it’s still getting monthly updates. However, the monthly updates aren’t always on time, usually they’re released towards the end of the month, so it lags behind a bit compared to the rest.</p>
+
+<p>What we can update:</p>
+<ul>
+  <li>The OS code, common for all.</li>
+  <li>The kernel, since it’s open source.</li>
+</ul>
+
+<p>Delayed updates:</p>
+<ul>
+  <li>Proprietary blobs</li>
+</ul>
+
+<p>We update them as soon as the update is available, but this means that it lags behind by a month or two. i.e. The May update for the A2 is still using the proprietary blobs from March 2021 since Xiaomi’s April build was delayed / pulled due to an issue, and thus we didn’t have the updates available in time.</p>
+
+<p>Complicated situation:</p>
+<ul>
+  <li>Proprietary firmware / bootloader.</li>
+</ul>
+
+<p>You might have read something about needing to install Stock Oreo 8.1 before installing CalyxOS on the Mi A2 - this was needed because newer versions wouldn’t let you relock the bootloader. We worked around this in April 2021, by including just the Oreo bootloader but newer firmware into our builds. However, the newer firmware had to be from September 2020, since due to a Xiaomi bug updating to any newer (October 2020 or March 2021, doesn’t matter) results in a factory reset. This happens with the stock OS too, if you update from September to October (or newer) it asks you to factory reset.</p>
+
+<p><br /></p>
+
+<p>This covers the security update situation for all supported devices. If you have any questions, feel free to ask them on one of our <a href="/de/community">chat channels</a>.</p>
+</div>
+    </div>
+  </div>
+
+  <div class="contentItem noImage">
+    <div class="description">
+      <h2><a href="#" >Work profiles fix</a></h2>
+      <p class="meta"><a href="/de/news/2021/05/13/work-profiles/">2021-05-13</a></p>
+      <div class="post-content"><p>The May update introduced a new Work Profile feature, allowing you to create a work profile directly from the Settings app without having to install any third party apps.</p>
+
+<p>This feature is available under Settings -&gt; System -&gt; Multiple users - &gt; Add user or profile -&gt; Work profile</p>
+
+<p>However, some of you may have noticed some crashes when trying to access certain functionality within the profile. We have identified the root cause and fixed it for new profiles going forward, till then you can run the following commands from your computer to fix it right away.</p>
+
+<p>Run this from a computer where you have ‘adb’ installed:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb shell pm list users
+</code></pre></div></div>
+
+<p>That will output something like:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Users:
+        UserInfo{0:Owner:c13} running
+        UserInfo{10:New Profile:1030} running
+        UserInfo{11:Guest:404}
+</code></pre></div></div>
+
+<p>Note the <code class="language-plaintext highlighter-rouge">10</code> here, that is the user id of the Work profile.</p>
+
+<p>Now, you can run the following commands to enable certain apps in the profile to fix some of the crashing. These apps are always required to be present in the profile but were missed due to an oversight which is what caused the crashes.</p>
+
+<p>Replace <code class="language-plaintext highlighter-rouge">10</code> with the user id you saw above:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb shell pm install-existing --user 10 com.android.contacts
+adb shell pm install-existing --user 10 com.android.settings
+adb shell pm install-existing --user 10 com.android.providers.downloads
+adb shell pm install-existing --user 10 com.android.providers.downloads.ui
+adb shell pm install-existing --user 10 com.android.documentsui
+</code></pre></div></div>
+
+<p>This is a one time fix and won’t be required in future builds.</p>
+
+<p>Our apologies for the inconvenience, and thank you for understanding!</p>
+</div>
+    </div>
+  </div>
+
+  <div class="contentItem noImage">
+    <div class="description">
+      <h2><a href="#" >May Security update</a></h2>
+      <p class="meta"><a href="/de/news/2021/05/06/may-update/">2021-05-06</a></p>
+      <div class="post-content"><p>With May comes another security update packed to the brim with new features.</p>
+
+<p>Changelog:</p>
+<ul>
+  <li>May Security update (2021-05-05)</li>
+  <li>Built-in Work profile support - create a new work profile directly from Settings without having to install any third party apps.</li>
+  <li>Create a work profile from Settings -&gt; System -&gt; Multiple users -&gt; Add user or profile -&gt; Work profile</li>
+  <li>You can select which apps to include in the profile, and also turn it on and off as you want. More to come in future updates!</li>
+  <li>Integration of Aurora Services for Aurora Store - Supports installing updates in the background seamlessly. New installs still need confirmation.</li>
+  <li>Enable from: Aurora Store -&gt; Settings -&gt; Installation -&gt; Installation method -&gt; “Aurora Services”</li>
+  <li>Prevent certain apps from bypassing the firewall when network access is completely disabled for them (i.e. the main toggle next to each app in Datura)</li>
+  <li>VoLTE and Wi-Fi Calling support fixes, should now work on all carriers supported on stock</li>
+  <li>microG: Include ‘Alt sign in’ option to fix account login issues</li>
+  <li>Include option to prevent toggling quick settings when on a secure lockscreen (i.e. PIN / Password / Pattern set) - prevents using them completely</li>
+  <li>Settings -&gt; Security -&gt; “Gear icon” next to Screen lock -&gt; Quick settings - default is allow toggling from lockscreen</li>
+  <li>Seedvault: Backup and restore Datura Firewall settings</li>
+  <li>Seedvault: Backup and restore additional settings added to CalyxOS</li>
+  <li>Seedvault: Call log backup speed improvements, should be a lot faster for those with a long history of calls.</li>
+  <li>Dialer: Allow disabling calling account selection dialog (Signal / WhatsApp calling option), from Dialer -&gt; menu (top right) -&gt; Settings -&gt; Display options</li>
+  <li>Allow disabling Presidential alerts, from Settings -&gt; Apps and notifications -&gt; Advanced -&gt; Wireless emergency alerts</li>
+  <li>Active Edge Gesture: Fix settings being reset</li>
+  <li>Enable Doze for improved battery life when using microG</li>
+  <li>Datura Firewall: Fix sorting bug</li>
+  <li>Music (Eleven): Upstream updates and bugfixes</li>
+  <li>Calendar (Etar): Upstream updates and bugfixes</li>
+  <li>Chromium: 90.0.4430.91</li>
+  <li>Updates for all other included apps.</li>
+</ul>
+
+<p>A2:</p>
+<ul>
+  <li>Qualcomm code updates.</li>
+</ul>
+
+<p>Note:
+A2 Firmware is from September 2020 since upgrading to versions after that
+requires a factory reset.</p>
+
+<div class="alert alert-info">
+<h4>Security update notes</h4>
+<ul>
+<li>The Pixels 3, 3 XL, 3a, 3a XL, 4, 4 XL, 4a, 5, 4a (5G) contain the full security patch, as they are still being updated by Google.</li>
+<li>The Pixels 2 and 2 XL are not being updated by Google anymore, so they only contain the fixes to the open source components, such as the OS code and the Linux kernel. Proprietary components such as the bootloader, modem firmware, and other firmware no longer get updates.</li>
+<li>The Xiaomi Mi A2 is still getting security updates, but those are Android 10 and usually released towards the end of the month, whereas CalyxOS is Android 11 and releases the updates right as they're available. This means that the A2 lags behind slightly, by a month or two, in getting security updates for proprietary components.</li>
+</ul>
+</div>
+</div>
+    </div>
+  </div>
+
+  <div class="contentItem noImage">
+    <div class="description">
+      <h2><a href="#" >microG Google Account Login fix, take two</a></h2>
+      <p class="meta"><a href="/de/news/2021/04/16/microg-google-login/">2021-04-16</a></p>
+      <div class="post-content"><p>CalyxOS includes <a href="https://microg.org/">microG</a> by default, and you get <a href="https://calyxos.org/features/microg/">three choices</a>. You can either keep it enabled (the default), disable it, or login with a Google account.</p>
+
+<p>The latter has been reported to have some issues. We tried to include a potential fix with the <a href="/de/news/2021/04/08/big-april-update/">April build</a>, but that didn’t work for everyone.</p>
+
+<p>We have been testing a bunch of fixes and finally have something that should hopefully work for everyone. It’s based on code from Vanced microG, which from what we’ve heard seems to work for everyone.</p>
+
+<p>It is now available for testing in our device-specific test F-Droid repos.</p>
+
+<p>These F-Droid repositories get app updates as soon as they’re available, you can add this if you want to help us test them out.</p>
+
+<p>To add it and install the update, simply add the right URL for your device to F-Droid -&gt; Settings -&gt; Repositories -&gt; Plus sign at the top right</p>
+
+<p>You can then try to sign-in to microG by launching it and tapping “Add Account”, and then choosing “Alt Sign in” - that will use this new method to login.</p>
+
+<p>If you want to help, you can let us know what worked for you and what didn’t, through <a href="https://www.reddit.com/r/CalyxOS/">Reddit</a> or <a href="https://matrix.to/#/#CalyxOS:matrix.org">Matrix</a>. For more details, see <a href="/de/community/">Community</a>.</p>
+
+<p><br />
+F-Droid test repos:</p>
+<table class="table table-striped download">
+  <tr><th>Device</th><th>URL</th><th>QR Code</th></tr>
+
+  <tr>
+    <td>Pixel 4a (5G) (bramble)</td>
+    <td><a href="https://calyxos.gitlab.io/calyx-fdroid-repo-bramble/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6">https://calyxos.gitlab.io/calyx-fdroid-repo-bramble/fdroid/repo</a></td>
+    <td><a href="/assets/images/gitlab-calyx-fdroid-repo-bramble-qrcode.png">Click to view</a></td>
+  </tr>
+
+  <tr>
+    <td>Pixel 5 (redfin)</td>
+    <td><a href="https://calyxos.gitlab.io/calyx-fdroid-repo-redfin/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6">https://calyxos.gitlab.io/calyx-fdroid-repo-redfin/fdroid/repo</a></td>
+    <td><a href="/assets/images/gitlab-calyx-fdroid-repo-redfin-qrcode.png">Click to view</a></td>
+  </tr>
+
+  <tr>
+    <td>Pixel 4a (sunfish)</td>
+    <td><a href="https://calyxos.gitlab.io/calyx-fdroid-repo-sunfish/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6">https://calyxos.gitlab.io/calyx-fdroid-repo-sunfish/fdroid/repo</a></td>
+    <td><a href="/assets/images/gitlab-calyx-fdroid-repo-sunfish-qrcode.png">Click to view</a></td>
+  </tr>
+
+  <tr>
+    <td>Pixel 4 XL (coral)</td>
+    <td><a href="https://calyxos.gitlab.io/calyx-fdroid-repo-coral/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6">https://calyxos.gitlab.io/calyx-fdroid-repo-coral/fdroid/repo</a></td>
+    <td><a href="/assets/images/gitlab-calyx-fdroid-repo-coral-qrcode.png">Click to view</a></td>
+  </tr>
+
+  <tr>
+    <td>Pixel 4 (flame)</td>
+    <td><a href="https://calyxos.gitlab.io/calyx-fdroid-repo-flame/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6">https://calyxos.gitlab.io/calyx-fdroid-repo-flame/fdroid/repo</a></td>
+    <td><a href="/assets/images/gitlab-calyx-fdroid-repo-flame-qrcode.png">Click to view</a></td>
+  </tr>
+
+  <tr>
+    <td>Pixel 3a XL (bonito)</td>
+    <td><a href="https://calyxos.gitlab.io/calyx-fdroid-repo-bonito/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6">https://calyxos.gitlab.io/calyx-fdroid-repo-bonito/fdroid/repo</a></td>
+    <td><a href="/assets/images/gitlab-calyx-fdroid-repo-bonito-qrcode.png">Click to view</a></td>
+  </tr>
+
+  <tr>
+    <td>Pixel 3a (sargo)</td>
+    <td><a href="https://calyxos.gitlab.io/calyx-fdroid-repo-sargo/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6">https://calyxos.gitlab.io/calyx-fdroid-repo-sargo/fdroid/repo</a></td>
+    <td><a href="/assets/images/gitlab-calyx-fdroid-repo-sargo-qrcode.png">Click to view</a></td>
+  </tr>
+
+  <tr>
+    <td>Pixel 3 XL (crosshatch)</td>
+    <td><a href="https://calyxos.gitlab.io/calyx-fdroid-repo-crosshatch/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6">https://calyxos.gitlab.io/calyx-fdroid-repo-crosshatch/fdroid/repo</a></td>
+    <td><a href="/assets/images/gitlab-calyx-fdroid-repo-crosshatch-qrcode.png">Click to view</a></td>
+  </tr>
+
+  <tr>
+    <td>Pixel 3 (blueline)</td>
+    <td><a href="https://calyxos.gitlab.io/calyx-fdroid-repo-blueline/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6">https://calyxos.gitlab.io/calyx-fdroid-repo-blueline/fdroid/repo</a></td>
+    <td><a href="/assets/images/gitlab-calyx-fdroid-repo-blueline-qrcode.png">Click to view</a></td>
+  </tr>
+
+  <tr>
+    <td>Pixel 2 XL (taimen)</td>
+    <td><a href="https://calyxos.gitlab.io/calyx-fdroid-repo-taimen/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6">https://calyxos.gitlab.io/calyx-fdroid-repo-taimen/fdroid/repo</a></td>
+    <td><a href="/assets/images/gitlab-calyx-fdroid-repo-taimen-qrcode.png">Click to view</a></td>
+  </tr>
+
+  <tr>
+    <td>Pixel 2 (walleye)</td>
+    <td><a href="https://calyxos.gitlab.io/calyx-fdroid-repo-walleye/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6">https://calyxos.gitlab.io/calyx-fdroid-repo-walleye/fdroid/repo</a></td>
+    <td><a href="/assets/images/gitlab-calyx-fdroid-repo-walleye-qrcode.png">Click to view</a></td>
+  </tr>
+
+  <tr>
+    <td>Xiaomi Mi A2 (jasmine_sprout)</td>
+    <td><a href="https://calyxos.gitlab.io/calyx-fdroid-repo-jasmine_sprout/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6">https://calyxos.gitlab.io/calyx-fdroid-repo-jasmine_sprout/fdroid/repo</a></td>
+    <td><a href="/assets/images/gitlab-calyx-fdroid-repo-jasmine_sprout-qrcode.png">Click to view</a></td>
+  </tr>
+
+</table>
+
+<p><br /></p>
+
+<p>Technical:</p>
+
+<p>We enable device registration and cloud messaging for microG by default to make sure that notifications work out of the box.</p>
+
+<p>The <a href="https://review.calyxos.org/c/CalyxOS/platform_external_microg_GmsCore/+/2905">fix</a> included in the [April build](/news/2021/04/08/big-april-update/ tried to disable those two before login, and then re-enable them after login. It seemed to work in some cases, not all.</p>
+
+<p>At the same time, we had heard that <a href="https://github.com/YTVanced/VancedMicroG">Vanced microG</a> had this Huawei login button which seemed to work for everyone. We had already looked at that code once, so we decided to try that approach.</p>
+
+<p>At first, we <a href="https://review.calyxos.org/c/CalyxOS/platform_external_microg_GmsCore/+/3074">tried</a> to spoof just the ‘brand’ reported. AOSP sets it to Android, Google sets it to Google. Didn’t work.</p>
+
+<p>Next, we thought it might be the fingerprint (which contains the build info). Both brand and fingerprint are usually spoofed on custom ROMs for Google Play compatiblity, so we thought that might be it. <a href="https://review.calyxos.org/c/CalyxOS/platform_external_microg_GmsCore/+/3120">Tried</a>, didn’t work.</p>
+
+<p>After that we decided <a href="https://review.calyxos.org/c/CalyxOS/platform_external_microg_GmsCore/+/3016">trying</a> to spoof all of the device details like microG does, didn’t work.</p>
+
+<p>Finally, we settled on just <a href="https://review.calyxos.org/c/CalyxOS/platform_external_microg_GmsCore/+/3125">pulling in</a> the full code from Vanced (something we wanted to do at first but decided to see if the other approaches worked.).
+This is what is being shipped in the APK now.</p>
+
+<p>Note: If you take a brief look at the code, it may seem like microG is sending a lot of details about your device to Google. However, if you look closer, it spoofs a lot of that (it doesn’t even have access to things like the serial number), which means most of the data it sends to Google would match exactly with other devices, making it hard to pick you out.</p>
+</div>
+    </div>
+  </div>
+
+  <div class="contentItem noImage">
+    <div class="description">
+      <h2><a href="#" >Chromium 90 available for testing</a></h2>
+      <p class="meta"><a href="/de/news/2021/04/13/chromium-90/">2021-04-13</a></p>
+      <div class="post-content"><p>Google <a href="https://chromereleases.googleblog.com/2021/04/chrome-for-android-update.html">released</a> Chrome 90 (90.0.4430.66) yesterday, and we have updated our Chromium fork (and the patches applied on top) to pull in all the changes, and created a new build.</p>
+
+<p>It is now available for testing in our test F-Droid repo, https://gitlab.com/CalyxOS/calyx-fdroid-repo</p>
+
+<p>This F-Droid repository gets app updates as soon as they’re available, you can add this if you want to help us test them out.</p>
+
+<p>To add it, simply add this URL to F-Droid -&gt; Settings -&gt; Repositories -&gt; Plus sign at the top right: <a href="https://calyxos.gitlab.io/calyx-fdroid-repo/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6">https://calyxos.gitlab.io/calyx-fdroid-repo/fdroid/repo?fingerprint=C44D58B4547DE5096138CB0B34A1CC99DAB3B4274412ED753FCCBFC11DC1B7B6</a></p>
+
+<p>Alternatively, you can scan the below QR code:</p>
+
+<p><img src="/assets/images/gitlab-calyx-fdroid-repo-qrcode.png" alt="gitlab-calyx-fdroid-repo" class="img-fluid" /></p>
+
+<p>Google usually does staged rollouts, where the new version will hit a small percentage of devices first, then some more, and so on.</p>
+
+<p>We intend to do something similar, by adding it to this test repo first, and then later on adding it to an F-Droid repo hosted on our own servers which is already pre-added to your CalyxOS device.</p>
+
+<p><br /></p>
+
+<p>Technical:</p>
+
+<p>Google made a change in how they bundle Chrome since Android 10:</p>
+
+<blockquote>
+  <blockquote>
+    <p>“Chrome is no longer used as a WebView implementation in Q+. We’ve moved to a new model for sharing common code between Chrome and WebView (called “Trichrome”) which gives the same benefits of reduced download and install size while having fewer weird special cases and bugs.”</p>
+  </blockquote>
+</blockquote>
+
+<p>However, the system handles this shared common code (called Trichrome Library) differently from a typical app, and as such F-Droid was not able to update it.</p>
+
+<p>We submitted changes to F-Droid to allow updating of Trichrome, which have since been merged and are included in the April builds. That means we can know ship Chromium updates via F-Droid easily.</p>
+
+<p>It turned out that F-Droid would have needed some system privileges to actually see the details about the “Trichrome Library” installation on the device so that it could actually update it. We didn’t want to grant any extra privileges to F-Droid itself, however we already have an F-Droid Privileged Extension which is meant exactly for something like this.</p>
+
+<p>The changes:</p>
+<ul>
+  <li>Client (the app): <a href="https://gitlab.com/fdroid/fdroidclient/-/merge_requests/967">https://gitlab.com/fdroid/fdroidclient/-/merge_requests/967</a></li>
+  <li>Privileged Extension (the component that allows automatic installs / background updates): <a href="https://gitlab.com/fdroid/privileged-extension/-/merge_requests/58">https://gitlab.com/fdroid/privileged-extension/-/merge_requests/58</a></li>
+</ul>
+</div>
+    </div>
+  </div>
+
+  <div class="contentItem noImage">
+    <div class="description">
+      <h2><a href="#" >The Big April update</a></h2>
+      <p class="meta"><a href="/de/news/2021/04/08/big-april-update/">2021-04-08</a></p>
+      <div class="post-content"><p>April is amongst us, and with it comes a security update, but wait, there’s more.</p>
+
+<p>This update contains a lot of new features and bug fixes that we’ve been hard at work over the last few months. There’s even more coming in the upcoming builds, stay tuned!</p>
+
+<p>Changelog:</p>
+<ul>
+  <li>April Security update (2021-04-05)</li>
+  <li>VoLTE and Wi-Fi Calling support for a lot more carriers</li>
+  <li>microG: Potential fix for google account login issue</li>
+  <li>Introducing Datura Firewall - our new Firewall app</li>
+  <li>Makes the existing Wi-Fi / Mobile / VPN / Background data toggle easily accessible. More features to come!</li>
+  <li>Add a Global cleartext network traffic restriction toggle to prevent all non-TLS traffic from leaving the device (including the OS, system apps and installed apps) Settings -&gt; System -&gt; Developer Options -&gt; Restrict cleartext network traffic</li>
+  <li>Include a Sensitive Phone Numbers list, hiding them from the call log.</li>
+  <li>Dialer also gets a new helpline contact list based on the above. (Dialer -&gt; Menu -&gt; Helpline) for easy access. Thanks <a href="https://lineageos.org/Changelog-25/">LineageOS</a>!</li>
+  <li>Add feature to optionally scramble the lockscreen PIN. Settings -&gt; Security -&gt; Screen lock -&gt; Scramble layout</li>
+  <li>The “Background data” toggle is now able to restrict background network access completely (even when using Wi-Fi) and as such has been renamed</li>
+  <li>Wi-Fi timeout feature - like our bluetooth timeout feature, now CalyxOS users have similar functionality to automatically turn off Wi-Fi after a certain time. Settings -&gt; Network &amp; Internet -&gt; Wi-Fi -&gt; Wi-Fi preferences -&gt; Turn off Wi-Fi automatically</li>
+  <li>microG: v0.2.18.204714</li>
+  <li>Chromium: 89.0.4389.105</li>
+  <li>Seedvault: Allow verifying and re-generating the 12 word recovery code</li>
+  <li>Ability to install Chromium (Trichrome) updates via F-Droid</li>
+  <li>Add caffeine, heads up, Sync, AmbientDisplay, USB Tether and AOD QS Tiles from LineageOS</li>
+  <li>Fix TTS Engine crash</li>
+  <li>Use Cloudflare DNS as the fallback in more places</li>
+  <li>Updates for all other included apps.</li>
+</ul>
+
+<p>A2:</p>
+<ul>
+  <li>Merge Xiaomi’s March 2021 Security update</li>
+  <li>Update Kernel to 4.4.261</li>
+  <li>Include 10.0 Firmware (September 2020)</li>
+</ul>
+
+<p>Note: A2 Firmware is from September since upgrading to versions after that
+requires a factory reset.</p>
+
+<div class="alert alert-info">
+<h4>Security update notes</h4>
+<ul>
+<li>The Pixels 3, 3 XL, 3a, 3a XL, 4, 4 XL, 4a, 5, 4a (5G) contain the full security patch, as they are still being updated by Google.</li>
+<li>The Pixels 2 and 2 XL are not being updated by Google anymore, so they only contain the fixes to the open source components, such as the OS code and the Linux kernel. Proprietary components such as the bootloader, modem firmware, and other firmware no longer get updates.</li>
+<li>The Xiaomi Mi A2 is still getting security updates, but those are Android 10 and usually released towards the end of the month, whereas CalyxOS is Android 11 and releases the updates right as they're available. This means that the A2 lags behind slightly, by a month or two, in getting security updates for proprietary components.</li>
+</ul>
+</div>
+</div>
+    </div>
+  </div>
+
+  <div class="contentItem noImage">
+    <div class="description">
+      <h2><a href="#" >Mi A2 10.0 Firmware</a></h2>
+      <p class="meta"><a href="/de/news/2021/03/29/mi-a2-ten-firmware/">2021-03-29</a></p>
+      <div class="post-content"><p>A new experimental build has been released for the Xiaomi Mi A2 which contains firmware from the stock 10.0 release.</p>
+
+<p>You may recall flashing stock Oreo 8.1 before installing CalyxOS - we now have a way to avoid doing that, and this update contains the bits updating the firmware on your existing install from 8.1 to 10.0. For new installs, factory images will be available at a later date.</p>
+
+<h4 id="changelog">Changelog:</h4>
+<ul>
+  <li>Merge Xiaomi’s March 2021 Security update</li>
+  <li>Update Kernel to 4.4.261</li>
+  <li>Include 10.0 Firmware (September 2020)</li>
+</ul>
+
+<div class="alert alert-info">
+<h4>Read before installing</h4>
+This update contains the bootloader and additional firmware files. While we have taken utmost care to make sure this works, and done lots of testing, incorrect or interrupted installation may lead to a non-working phone.
+</div>
+
+<p>For testing this build, you need to enable USB Debugging on your device, and then run:</p>
+
+<p><code class="language-plaintext highlighter-rouge">adb shell setprop sys.update.channel a2ten</code></p>
+
+<p>And then, Settings -&gt; System -&gt; Updates -&gt; Check for updates. That will begin downloading and then install the build.</p>
+
+<p>If that doesn’t work, you can also try running:</p>
+
+<p><code class="language-plaintext highlighter-rouge">adb shell cmd jobscheduler run --force app.seamlessupdate.client 1</code></p>
+
+<p>So far in our testing it works well, but additional testing is always helpful and appreciated.</p>
+
+<p>If you can wait, it will hit the beta channel later, and then the stable channel after that, you won’t have to do anything, your device will get the update automatically.</p>
+
+<h4 id="additional-details">Additional details:</h4>
+
+<p>The way this works is that we included the bootloader (<code class="language-plaintext highlighter-rouge">abl</code>) from stock Oreo 8.1, and the rest from stock Q 10.0. The old bootloader is needed because that’s the only version that supports Verified Boot with a custom OS like ours, however we can safely upgrade the rest, to an extent.</p>
+
+<p>You may have noticed the September 2020 date above, unfortunately that is due to a bug with all Xiaomi firmware after that. Updating to those from any older build results in needing a factory reset - you simply cannot upgrade without wiping data. This is not desirable, and hence for now we’ve included the last working firmware where this wasn’t required.</p>
+</div>
+    </div>
+  </div>
+
+  <div class="contentItem noImage">
+    <div class="description">
+      <h2><a href="#" >Mi A2 Charging fix</a></h2>
+      <p class="meta"><a href="/de/news/2021/03/18/mi-a2-charging-fix/">2021-03-18</a></p>
+      <div class="post-content"><p>A build with a charging fix for the Xiaomi Mi A2 has been released.</p>
+
+<p>There are no other changes, which means it’s a very small update - only 609 Kb for the incremental OTA update.</p>
+</div>
+    </div>
+  </div>
+
+  <div class="contentItem noImage">
+    <div class="description">
+      <h2><a href="#" >March Security update and Feature drop</a></h2>
+      <p class="meta"><a href="/de/news/2021/03/04/march-security-update/">2021-03-04</a></p>
+      <div class="post-content"><p>The March Security update is now available for all supported devices.</p>
+
+<p>Changelog:</p>
+<ul>
+  <li>CalyxOS 2.2.0 - Android 11</li>
+  <li>March Security update (2021-03-05) and feature drop</li>
+  <li>Chromium: 88.0.4324.181</li>
+  <li>Updates for all other included apps.</li>
+</ul>
+
+<div class="alert alert-info">
+<h4>Security update notes</h4>
+<ul>
+<li>The Pixels 3, 3 XL, 3a, 3a XL, 4, 4 XL, 4a, 5, 4a (5G) contain the full security patch, as they are still being updated by Google.</li>
+<li>The Pixels 2 and 2 XL are not being updated by Google anymore, so they only contain the fixes to the open source components, such as the OS code and the Linux kernel. Proprietary components such as the bootloader, modem firmware, and other firmware no longer get updates.</li>
+<li>The Xiaomi Mi A2 is still getting security updates but those are Android 10 and usually released towards the end of the month, whereas CalyxOS is Android 11 and releases the updates right as they're available. This means that the A2 lags behind slightly, by a month or two in getting security updates for proprietary components.</li>
+</ul>
+</div>
+</div>
+    </div>
+  </div>
+
+  <div class="contentItem noImage">
+    <div class="description">
+      <h2><a href="#" >February Security update</a></h2>
+      <p class="meta"><a href="/de/news/2021/02/03/february-security-update/">2021-02-03</a></p>
+      <div class="post-content"><p>The February Security update is now available for all supported devices.</p>
+
+<p>Changelog:</p>
+<ul>
+  <li>CalyxOS 2.2.0 - Android 11</li>
+  <li>February Security update (2021-02-05)</li>
+  <li>microG: v0.2.17.204714</li>
+  <li>microG: Include Services Framework (GSF)</li>
+  <li>Chromium: 88.0.4324.93</li>
+  <li>Calendar (Etar): 1.0.24</li>
+  <li>Keyboard: Remove non-functional proprietary gesture-typing preference.</li>
+  <li>Aurora Store: Fix installation issues for new installs,
+to fix your current app kindly re-install the app from F-Droid</li>
+  <li>Updates for all other included apps.</li>
+</ul>
+
+<p>Pixel 2, 2 XL, 3, 3 XL, 3a, 3a XL, 4, 4 XL:</p>
+<ul>
+  <li>Implement Active Edge support - squeeze phone to perform action</li>
+  <li>Configure from Settings -&gt; System -&gt; Gestures -&gt; Active Edge</li>
+</ul>
+
+<div class="alert alert-info">
+<h4>Security update notes</h4>
+<ul>
+<li>The Pixels 3, 3 XL, 3a, 3a XL, 4, 4 XL, 4a, 5, 4a (5G) contain the full security patch, as they are still being updated by Google.</li>
+<li>The Pixels 2 and 2 XL are not being updated by Google anymore, so they only contain the fixes to the open source components, such as the OS code and the Linux kernel. Proprietary components such as the bootloader, modem firmware, and other firmware no longer get updates.</li>
+<li>The Xiaomi Mi A2 is still getting security updates but those are Android 10 and usually released towards the end of the month, whereas CalyxOS is Android 11 and releases the updates right as they're available. This means that the A2 lags behind slightly, by a month or two in getting security updates for proprietary components.</li>
+</ul>
+</div>
+</div>
+    </div>
+  </div>
+
+  <div class="contentItem noImage">
+    <div class="description">
+      <h2><a href="#" >Pixel 5 and Pixel 4a (5G) support</a></h2>
+      <p class="meta"><a href="/de/news/2021/01/26/pixel5-pixel4a5g-support/">2021-01-26</a></p>
+      <div class="post-content"><p>The wait is over, we have builds available for the new Pixels!</p>
+
+<p>These builds are Android 11 with the January 2021 Security update,
+and are fully working.</p>
+
+<p>You can follow these <a href="/de/get/install/">instructions to install</a>.</p>
+
+<div class="alert alert-info">
+<b>Note: DO NOT </b> install the Pixel 4a (5G) / bramble build on a Pixel 4a / sunfish (or vice versa).
+</div>
+
+<table class="table table-striped download">
+  <tr><th>Device</th><th>Link</th><th>SHA256</th></tr>
+  <tr>
+<td>Pixel 5 / redfin</td>
+<td><a href="https://release.calyxinstitute.org/redfin-factory-2021.01.25.15.zip">redfin-factory-2021.01.25.15.zip</a></td>
+<td>cdbb9f775e9d5de913b8d35ac125e2c564dbf1df2837ca29e2b985387f9ab659</td>
+</tr>
+<tr>
+<td>Pixel 4a (5G) / bramble</td>
+<td><a href="https://release.calyxinstitute.org/bramble-factory-2021.01.25.15.zip">bramble-factory-2021.01.25.15.zip</a></td>
+<td>811e34e8200b980310a5851bf45c75097ae94642f4a20f9fbc16e0be79c440ae</td>
+</tr>
+</table>
+
+<p>Do let us know if you face any issues or bugs.</p>
+</div>
+    </div>
+  </div>
+
+  <div class="contentItem noImage">
+    <div class="description">
+      <h2><a href="#" >New website</a></h2>
+      <p class="meta"><a href="/de/news/2020/09/01/new-website/">2020-09-01</a></p>
+      <div class="post-content"><p>Yippie! We have a new website. It is static generated and anyone can contribute through gerrit. See <a href="https://gitlab.com/CalyxOS/calyxos.org">https://gitlab.com/CalyxOS/calyxos.org</a> and <a href="https://review.calyxos.org/q/project:CalyxOS%252Fcalyxos.org">https://review.calyxos.org/q/project:CalyxOS/calyxos.org</a>.</p>
+
+<p>In the coming weeks, we will be adding help documentation, tutorials, release change logs, and more. Stay tuned!</p>
+</div>
+    </div>
+  </div>
+
+  <div class="contentItem noImage">
+    <div class="description">
+      <h2><a href="#" >Some phones may have stopped updating and need intervention</a></h2>
+      <p class="meta"><a href="/de/news/2020/05/08/some-phones-may-have-stopped-updating/">2020-05-08</a></p>
+      <div class="post-content"><p>The April 2020 build of Calyxos (build 2020.04.07.17) did not include the OTA Updater due to a misconfiguration.</p>
+
+<p>This means that it will not update to the May build by itself, you need to follow two quick manual steps:</p>
+
+<p>1) Open F-Droid, pull down to refresh the repositories. After the refresh completes , check the updates list. You’ll see an update for “Seamless Update Client”, install that update.</p>
+
+<p>2) Open the newly updated “Updater” app. It’ll ask you “Let app always run in background?”, please hit allow, and then it will start updating the system</p>
+</div>
+    </div>
+  </div>
+
+
+  		</section>
+    </main>
+    <footer>
+      <footer class="wrapper">
+  <p>This work is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer nofollow">CC BY-SA 4.0 license</a>.</p>
+  <p>&copy; 2021 <a href="https://calyxinstitute.net" target="_blank" rel="noreferrer nooopener">Calyx Institute</a>.</p>
+</footer>
+
+    </footer>
+  </body>
+</html>

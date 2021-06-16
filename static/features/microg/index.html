@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Goodbye, Google</title>
+  <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+  <meta name="description" content="Goodbye, Google" /><link rel="stylesheet" href="../design-system/css/style.css">
+  <!-- <link rel="stylesheet" href="/assets/main.css"> -->
+  <link rel="alternate" type="application/rss+xml" title="CalyxOS" href="/feed.xml">
+  <link rel="alternate" hreflang="en" href="/en/features/microg/" />
+  <link rel="alternate" hreflang="de" href="/de/features/microg/" />
+  <link rel="alternate" hreflang="es" href="/es/features/microg/" />
+  <link rel="alternate" hreflang="pt" href="/pt/features/microg/" />
+</head>
+
+  <body>
+    <header>
+  <a href="#navigation" class="assistiveText">Skip to Navigation</a>
+  <a href="#content" class="assistiveText">Skip to Main Content</a>
+  <div class="wrapper">
+    <div class="logoMark emptyLogo"></div>
+    <h1 class="logo"><a href="#" class="navbar-brand" href="/">CalyxOS</a></h1>
+    <nav class="navbar navbar-expand-sm">
+      <input type="checkbox" class="toggle" id="navbar-visible"></input>
+      <ul class="navbar-nav">
+        <li class="nav-level-0 nav-item">
+  <a class="nav-level-0 nav-link " href="/about/">About</a>
+</li>
+<li class="nav-level-0 nav-item">
+  <a class="nav-level-0 nav-link active" href="/features/">Features</a>
+</li>
+<li class="nav-level-0 nav-item">
+  <a class="nav-level-0 nav-link " href="/faq/">FAQ</a>
+</li>
+<li class="nav-level-0 nav-item">
+  <a class="nav-level-0 nav-link " href="/community/">Community</a>
+</li>
+<li class="nav-level-0 nav-item">
+  <a class="nav-level-0 nav-link " href="/contribute/">Contribute</a>
+</li>
+<li class="nav-level-0 nav-item">
+  <a class="nav-level-0 nav-link " href="/news/">News</a>
+</li>
+        <li><a role="button" class="btn primaryBtn" href="/get">Get CalyxOS</a></li>
+      </ul>
+      <label class="toggle navbar-toggle" for="navbar-visible"></label>
+    </nav>
+  </div>
+</header>
+
+    <main>
+      <section class="secondaryIntro">
+  			<div class="wrapper">
+  				<h1>Goodbye, Google</h1>
+          
+  			</div>
+  		</section>
+      <section class="content primaryContent wrapper">
+  			<p>With CalyxOS, Google is not running in the background, continually uploading your data and location to the the Google servers.</p>
+
+<h2 id="how-android-usually-works">How Android Usually Works</h2>
+
+<p>When you use an Android device, the operating system is open source, but many of the applications depend on something called Google Play Services (GMS). This software is proprietary and tightly controlled by Google. Over time, Google has moved more and more parts of the open operating system into the closed GMS.</p>
+
+<p>There are many problems with Google Play Services (GMS):</p>
+
+<ul>
+  <li>Most popular apps do not work without GMS installed.</li>
+  <li>Google uses GMS to gather data on how you are using your device, including location and advertisement tracking.</li>
+  <li>Google tightly controls which vendors are allowed to install GMS on new devices.</li>
+</ul>
+
+<h2 id="microg-to-the-rescue">microG to The Rescue</h2>
+
+<p>microG is a open source replacement for Google Play Services (and related software), but it only includes the useful parts. Unlike GMS, microG does not have any advertising or location tracking, for example.</p>
+
+<p>Although microG is not yet a mature replacement for GMS, the early results with microG are impressive. Most apps are able to run fine with microG without any need for GMS.</p>
+
+<p>Features of microG:</p>
+
+<ul>
+  <li>Reduces battery, memory, and CPU usage.</li>
+  <li>Allows you to opt-in to specific Google services if you want.</li>
+  <li>Location: typically, an Android device will using WiFi and cell-towers data from Google to help determine precise location. microG does this without using Google, and without reporting your location to Google (CalyxOS is configured to use <a href="https://github.com/microg/IchnaeaNlpBackend">location information from Mozilla</a>).</li>
+  <li>Notification: most chat apps depend on GMS to be alerted when a new message should be delivered to the user. microG allows your device to use this service from Google without the full GMS installation.</li>
+</ul>
+
+<p>You can check the microG wiki to see the current status of which <a href="https://github.com/microg/android_packages_apps_GmsCore/wiki/Implementation-Status">parts of GMS have been implemented in microG</a>.</p>
+
+<h2 id="options-for-running-microg-in-calyxos">Options for running microG in CalyxOS</h2>
+
+<p>With CalyxOS, you have three options:</p>
+
+<h4 id="1-microg-disabled">1. microG disabled</h4>
+
+<p>You can choose to disable microG when setting up the device for the first time.</p>
+
+<p>You will receive no “push notification” using the Google infrastructure. Many apps refuse to run, however some apps such as Google Camera still work.</p>
+
+<h4 id="2-microg-enabled-no-google-account-default">2. microG enabled, no Google Account (default)</h4>
+
+<p>This is the default recommended option.</p>
+
+<p>With microG enabled, many more applications will work. You will receive push notifications from Google servers.</p>
+
+<h4 id="3-microg-enabled-with-a-google-account">3. microG enabled, with a Google Account</h4>
+
+<p>If you choose to configure a Google Account, even more apps will run correctly. Users on the Google Fi network can get network connectivity.</p>
+
+  		</section>
+    </main>
+    <footer>
+      <footer class="wrapper">
+  <p>This work is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer nofollow">CC BY-SA 4.0 license</a>.</p>
+  <p>&copy; 2021 <a href="https://calyxinstitute.net" target="_blank" rel="noreferrer nooopener">Calyx Institute</a>.</p>
+</footer>
+
+    </footer>
+  </body>
+</html>

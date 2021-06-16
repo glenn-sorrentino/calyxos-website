@@ -1,0 +1,4 @@
+I"ù<p>The official CalyxOS releases are built on our official build server running Debian Stable (buster/10 at time of writing)</p>
+
+<p>They‚Äôre <code class="language-plaintext highlighter-rouge">user</code> builds, and we build <code class="language-plaintext highlighter-rouge">target-files-package otatools-package</code>, and then copy those zips to a dedicated offline signing machine to sign and release.</p>
+:ET

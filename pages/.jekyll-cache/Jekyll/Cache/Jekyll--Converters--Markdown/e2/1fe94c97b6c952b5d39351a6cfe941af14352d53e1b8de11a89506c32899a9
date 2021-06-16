@@ -1,0 +1,42 @@
+I"�
+<div class="mb-4">
+  <h2>Calyx VPN</h2>
+  <p><b>Free VPN Service offered by The Calyx Institute</b></p>
+  <p>CalyxVPN is an application to provide easy and secure encrypted communication. The app is a custom branded build of https://f-droid.org/packages/se.leap.bitmaskclient. This version is preconfigured with one trusted provider—The Calyx Institute—and allows anonymous VPN usage without any manual setup.</p>
+  <p>By encrypting and securely routing all your network traffic through Calyx’s servers, CalyxVPN is able to prevent many forms of censorship and surveillance.</p>
+  <p><a class="more" href="https://calyx.net">Read More</a></p>
+</div>
+
+<div class="mb-4">
+  <h2>DuckDuckGo Privacy Browser</h2>
+  <p><b>Privacy, simplified</b></p>
+  <p>At DuckDuckGo, we believe the Internet shouldn’t feel so creepy, and getting the privacy you deserve online should be as simple as closing the blinds.</p>
+  <p>Our app provides the privacy essentials you need to seamlessly take control of your personal information as you search and browse the web, no matter where the Internet takes you:</p>
+  <ul><li> Escape Advertising Tracker Networks — Our Privacy Protection will block all the hidden third-party trackers we can find, exposing the major advertising networks tracking you over time, so that you can track who’s trying to track you.</li><li> Increase Encryption Protection — We force sites to use an encrypted connection where available, protecting your data from prying eyes, like ISPs.</li><li> Search Privately — You share your most personal information with your search engine, like your financial, medical, and political questions. What you search for is your own business, which is why DuckDuckGo search doesn’t track you. Ever.</li><li> Decode Privacy Policies — We’ve partnered with Terms of Service Didn’t Read to include their scores and labels of website terms of service and privacy policies, where available.</li></ul>
+  <p>As you search and browse, the DuckDuckGo Privacy Browser shows you a Privacy Grade rating when you visit a website (A-F). This rating lets you see how protected you are at a glance, dig into the details to see who we caught trying to track you, and learn how we enhanced the underlying site’s privacy measures. The Privacy Grade is scored automatically based on the prevalence of hidden tracker networks, encryption availability, and website privacy practices.</p>
+  <p>Our app provides standard browsing functionality including tabs, bookmarks, and autocomplete. In addition to strong Privacy Protection as described above, we also packed in some extra privacy features into the browser itself:</p>
+  <ul><li> Fire Button — Clear all your tabs and data with one tap.</li><li> Application Lock — Secure the app with Touch ID or Face ID.</li></ul>
+  <p>Too many people believe you simply can’t expect privacy on the Internet. We’re fighting to change that, and have made it our mission to set a new standard of trust online. Install DuckDuckGo and take back your privacy!</p>
+  <p>Antifeatures:</p>
+  <ul><li> NonFreeNet - Uses DuckDuckGo as the exclusive search engine, for which the</li></ul>
+  <p>source code is not available.</p>
+  <p><a class="more" href="https://duckduckgo.com/app">Read More</a></p>
+</div>
+
+<div class="mb-4">
+  <h2>Riseup VPN</h2>
+  <p><b>Secure VPN powered by Bitmask</b></p>
+  <p>RiseupVPN is an application to provide easy and secure encrypted communication. The app is a custom branded build of https://f-droid.org/packages/se.leap.bitmaskclient. This version is preconfigured with one trusted provider—the Riseup collective—and allows anonymous VPN usage without any manual setup.</p>
+  <p>By encrypting and securely routing all your network traffic through Riseup’s servers, RiseupVPN is able to prevent many forms of censorship and surveillance.</p>
+  <p><a class="more" href="https://riseup.net/">Read More</a></p>
+</div>
+
+<div class="mb-4">
+  <h2>Tor Browser</h2>
+  <p><b>Experience real private browsing without tracking, surveillance, or censorship.</b></p>
+  <p>Tor Browser for Android is the only official mobile browser supported by the Tor Project, developers of the world’s strongest tool for privacy and freedom online.</p>
+  <p>BLOCK TRACKERS Tor Browser isolates each website you visit so third-party trackers and ads can’t follow you. Any cookies automatically clear when you’re done browsing.</p>
+  <p><a class="more" href="https://www.torproject.org/">Read More</a></p>
+</div>
+
+:ET

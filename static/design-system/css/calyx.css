@@ -1,0 +1,123 @@
+/* HEADER */
+
+@media (prefers-color-scheme: light) {
+  .intro.withImage {
+    background: no-repeat right center url('../../../../assets/images/device/feature/intro-lm.png');
+  }
+
+  .navbar-toggle {
+    background-image: url("../../../assets/images/lm-icon-menu.png");
+  }
+
+  .icon.calyx {
+    background-image: url('../../../assets/images/lm-logo-calyx.png');
+  }
+
+  @media only screen and (max-width: 768px) {
+    .navbar-nav {
+      border: var(--border-lm);
+      background-color: var(--color-light);
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .intro.withImage {
+    background: no-repeat right center url('../../../../assets/images/device/feature/intro-dm.png');
+  }
+
+  .navbar-toggle {
+    background-image: url("../../../assets/images/dm-icon-menu.png");
+  }
+
+  .icon.calyx {
+    background-image: url('../../../assets/images/dm-logo-calyx.png');
+  }
+
+  @media only screen and (max-width: 768px) {
+    .navbar-nav {
+      border: var(--border-dm-alt);
+      background-color: var(--color-dark);
+    }
+  }
+}
+
+.navbar .nav-link {
+  margin: 0.25em;
+}
+
+.navbar-toggle {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-size: cover;
+  z-index: 200;
+  display: none;
+  position: relative;
+  top: .25rem;
+}
+
+.navbar a::selection {
+  background-color: rgba(255,255,255,0.95);
+  color: rgba(0,0,0,0.95);
+}
+
+.navbar a span::selection {
+  background-color: rgba(255,255,255,0.95);
+  color: rgba(0,0,0,0.95);
+}
+
+@media only screen and (max-width: 768px) {
+
+  .navbar-toggle { display: block }
+
+  .navbar-nav {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    right: var(--spacing-large);
+    top: calc(var(--spacing-xxlarge)* 1.125);
+    padding: var(--spacing-medium);
+    border-radius: var(--radius-base);
+    .nav-link {
+      padding: 0.75em 0.5em 0.5em 1em;
+    }
+  }
+
+  nav ul li {
+    padding: 0;
+    margin: 0 0 var(--spacing-medium) 0 !important;
+  }
+
+  nav ul li:last-of-type {
+    margin-bottom: 0 !important;
+  }
+
+  input.toggle:checked ~ .navbar-nav {
+    display: grid;
+  }
+}
+
+label.toggle {
+  cursor: pointer;
+}
+
+input.toggle {
+  display: none;
+}
+
+input.toggle:not(:checked) ~ #lang-toggle {
+  display: none;
+}
+
+/* END HEADER */
+
+/* INTRO */
+
+.intro.withImage {
+  background-size: 30%;
+  background-position-x: calc(100% - var(--spacing-xlarge));
+}
+
+/* END INTRO */
+
+/* ICONS */

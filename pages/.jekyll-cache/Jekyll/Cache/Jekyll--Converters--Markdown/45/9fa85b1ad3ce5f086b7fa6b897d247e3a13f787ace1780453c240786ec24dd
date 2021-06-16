@@ -1,0 +1,51 @@
+I"�<p>With CalyxOS, Google is not running in the background, continually uploading your data and location to the the Google servers.</p>
+
+<h2 id="how-android-usually-works">How Android Usually Works</h2>
+
+<p>When you use an Android device, the operating system is open source, but many of the applications depend on something called Google Play Services (GMS). This software is proprietary and tightly controlled by Google. Over time, Google has moved more and more parts of the open operating system into the closed GMS.</p>
+
+<p>There are many problems with Google Play Services (GMS):</p>
+
+<ul>
+  <li>Most popular apps do not work without GMS installed.</li>
+  <li>Google uses GMS to gather data on how you are using your device, including location and advertisement tracking.</li>
+  <li>Google tightly controls which vendors are allowed to install GMS on new devices.</li>
+</ul>
+
+<h2 id="microg-to-the-rescue">microG to The Rescue</h2>
+
+<p>microG is a open source replacement for Google Play Services (and related software), but it only includes the useful parts. Unlike GMS, microG does not have any advertising or location tracking, for example.</p>
+
+<p>Although microG is not yet a mature replacement for GMS, the early results with microG are impressive. Most apps are able to run fine with microG without any need for GMS.</p>
+
+<p>Features of microG:</p>
+
+<ul>
+  <li>Reduces battery, memory, and CPU usage.</li>
+  <li>Allows you to opt-in to specific Google services if you want.</li>
+  <li>Location: typically, an Android device will using WiFi and cell-towers data from Google to help determine precise location. microG does this without using Google, and without reporting your location to Google (CalyxOS is configured to use [[location information from Mozilla -&gt; https://github.com/microg/IchnaeaNlpBackend ]]).</li>
+  <li>Notification: most chat apps depend on GMS to be alerted when a new message should be delivered to the user. microG allows your device to use this service from Google without the full GMS installation.</li>
+</ul>
+
+<p>You can check the microG wiki to see the current status of which [[ parts of GMS have been implemented in microG =&gt; https://github.com/microg/android_packages_apps_GmsCore/wiki/Implementation-Status ]].</p>
+
+<h2 id="options-for-running-microg-in-calyxos">Options for running microG in CalyxOS</h2>
+
+<p>With CalyxOS, you have three options:</p>
+
+<h4 id="1-microg-disabled">1. microG disabled</h4>
+
+<p>You can choose to disable microG when setting up the device for the first time.</p>
+
+<p>You will receive no “push notification” using the Google infrastructure. Many apps refuse to run, however some apps such as Google Camera still work.</p>
+
+<h4 id="2-microg-enabled-no-google-account-default">2. microG enabled, no Google Account (default)</h4>
+
+<p>This is the default recommended option.</p>
+
+<p>With microG enabled, many more applications will work. You will receive push notifications from Google servers.</p>
+
+<h4 id="3-microg-enabled-with-a-google-account">3. microG enabled, with a Google Account</h4>
+
+<p>If you choose to configure a Google Account, even more apps will run correctly. Users on the Google Fi network can get network connectivity.</p>
+:ET

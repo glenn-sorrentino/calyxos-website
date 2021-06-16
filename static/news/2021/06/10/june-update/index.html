@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>June Security update and Feature drop</title>
+  <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+  <meta name="description" content="June Security update and Feature drop" /><link rel="stylesheet" href="../design-system/css/style.css">
+  <!-- <link rel="stylesheet" href="/assets/main.css"> -->
+  <link rel="alternate" type="application/rss+xml" title="CalyxOS" href="/feed.xml">
+  <link rel="alternate" hreflang="en" href="/en/news/2021/06/10/june-update/" />
+  <link rel="alternate" hreflang="de" href="/de/news/2021/06/10/june-update/" />
+  <link rel="alternate" hreflang="es" href="/es/news/2021/06/10/june-update/" />
+  <link rel="alternate" hreflang="pt" href="/pt/news/2021/06/10/june-update/" />
+</head>
+
+  <body>
+    <header>
+  <a href="#navigation" class="assistiveText">Skip to Navigation</a>
+  <a href="#content" class="assistiveText">Skip to Main Content</a>
+  <div class="wrapper">
+    <div class="logoMark emptyLogo"></div>
+    <h1 class="logo"><a href="#" class="navbar-brand" href="/">CalyxOS</a></h1>
+    <nav class="navbar navbar-expand-sm">
+      <input type="checkbox" class="toggle" id="navbar-visible"></input>
+      <ul class="navbar-nav">
+        <li class="nav-level-0 nav-item">
+  <a class="nav-level-0 nav-link " href="/about/">About</a>
+</li>
+<li class="nav-level-0 nav-item">
+  <a class="nav-level-0 nav-link " href="/features/">Features</a>
+</li>
+<li class="nav-level-0 nav-item">
+  <a class="nav-level-0 nav-link " href="/faq/">FAQ</a>
+</li>
+<li class="nav-level-0 nav-item">
+  <a class="nav-level-0 nav-link " href="/community/">Community</a>
+</li>
+<li class="nav-level-0 nav-item">
+  <a class="nav-level-0 nav-link " href="/contribute/">Contribute</a>
+</li>
+<li class="nav-level-0 nav-item">
+  <a class="nav-level-0 nav-link active" href="/news/">News</a>
+</li>
+        <li><a role="button" class="btn primaryBtn" href="/get">Get CalyxOS</a></li>
+      </ul>
+      <label class="toggle navbar-toggle" for="navbar-visible"></label>
+    </nav>
+  </div>
+</header>
+
+    <main>
+      <section class="secondaryIntro">
+  			<div class="wrapper">
+  				<h1>June Security update and Feature drop</h1>
+          
+  			</div>
+  		</section>
+      <section class="content primaryContent wrapper">
+  			<p>The June update is here, with even more features and bug fixes.</p>
+
+<p>Changelog:</p>
+<ul>
+  <li>CalyxOS 2.6.1 - Android 11</li>
+  <li>June Security update and Feature drop (2021-06-05)</li>
+  <li>Work profile v2: Big improvements to work profile creation, resolving issues with certain essential system apps not being enabled in the profile, not being able to see work profile apps in the recent screen, and work needed to support future work profile features.</li>
+  <li>For the best experience, we would recommend deleting any profiles you created in the May build and starting over with a fresh new profile.</li>
+  <li>Enable SeedVault backups for work profile, from Settings (in the main user) -&gt; System -&gt; Backup -&gt; Work. Do note that USB is not available in work profiles due as Android does not support that.</li>
+  <li>Handle microG better in work profile, enabling / disabling all of it’s companion apps as needed.</li>
+  <li>Firewall (Datura): Support work profile apps, improve icon and fix sorting of apps.</li>
+  <li>AMOLED dark mode, aka pure black background for dark theme. Enable at Settings -&gt; Display -&gt; Dark theme -&gt; Pure black</li>
+  <li>Network traffic monitor feature, which shows network traffic indication in the status bar. Enable from Settings -&gt; System -&gt; Status bar -&gt; Network traffic monitor</li>
+  <li>Status bar icon configuration, allowing you to choose what to show. Configure in Settings -&gt; System -&gt; Status bar -&gt; System icons</li>
+  <li>Use rounded corners in the system where appropriate.</li>
+  <li>Include a Maps app in the OS, Organic Maps. You can install it from F-Droid</li>
+  <li>Bring in the Recorder app from LineageOS, allowing you to create sound recordings.</li>
+  <li>F-Droid: Handle Trichrome updates better, fixing an issue with Trichrome Library updates where they would always show up as an update even after updating.</li>
+  <li>Dialer: Use a restrictive WebView for Menu -&gt; Helplines links, which clears it’s history when you’re done to avoid leaving any traces. Also add additional categories for the helplines.</li>
+  <li>Panic trigger (Ripple): This will no longer show up as an update in Aurora Store</li>
+  <li>Music (Eleven): Bug fixes and performance improvements</li>
+  <li>You can also create screen recordings using the built-in recorder from the quick settings (what you see down the status bar)</li>
+  <li>microG: Implement Font provider to support more applications, such as Google Fi</li>
+  <li>microG: Update to v0.2.19.211515</li>
+  <li>Chromium: Switch to 64-bit builds on all devices.</li>
+  <li>Chromium: Update 91.0.4472.88</li>
+  <li>Updates for all other included apps.</li>
+  <li>Updated translations for all apps, and the OS.</li>
+</ul>
+
+<p>Note:
+A2 Firmware is from September 2020 since upgrading to versions after that
+requires a factory reset.</p>
+
+<div class="alert alert-info">
+<h4>Security update notes</h4>
+<ul>
+<li>The Pixels 3, 3 XL, 3a, 3a XL, 4, 4 XL, 4a, 5, 4a (5G) contain the full security patch, as they are still being updated by Google.</li>
+<li>The Pixels 2 and 2 XL are not being updated by Google anymore, so they only contain the fixes to the open source components, such as the OS code and the Linux kernel. Proprietary components such as the bootloader, modem firmware, and other firmware no longer get updates.</li>
+<li>The Xiaomi Mi A2 is still getting security updates, but those are Android 10 and usually released towards the end of the month, whereas CalyxOS is Android 11 and releases the updates right as they're available. This means that the A2 lags behind slightly, by a month or two, in getting security updates for proprietary components.</li>
+</ul>
+</div>
+
+  		</section>
+    </main>
+    <footer>
+      <footer class="wrapper">
+  <p>This work is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer nofollow">CC BY-SA 4.0 license</a>.</p>
+  <p>&copy; 2021 <a href="https://calyxinstitute.net" target="_blank" rel="noreferrer nooopener">Calyx Institute</a>.</p>
+</footer>
+
+    </footer>
+  </body>
+</html>

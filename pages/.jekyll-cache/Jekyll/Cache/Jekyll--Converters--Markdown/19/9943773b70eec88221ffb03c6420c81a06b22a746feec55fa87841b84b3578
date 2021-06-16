@@ -1,0 +1,70 @@
+I"�<h2 id="currently-used">Currently used</h2>
+
+<h3 id="chromium">Chromium</h3>
+<p>System Webview: Yes</p>
+
+<p>Links:</p>
+<ul>
+  <li>https://chromium.googlesource.com/chromium/src/+/master/docs/android_build_instructions.md</li>
+  <li>https://www.chromium.org/developers/how-tos/build-instructions-android-webview</li>
+  <li>https://chromiumdash.appspot.com/releases?platform=Android</li>
+  <li>https://www.chromium.org/developers/how-tos/get-the-code/working-with-release-branches</li>
+</ul>
+
+<p>args.gn:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>target_cpu = "arm64"
+android_channel = "stable"
+is_clang = true
+
+target_os="android"
+is_debug=false
+is_official_build=true
+is_chrome_branded=false
+use_official_google_api_keys=false
+ffmpeg_branding="Chrome"
+proprietary_codecs=true
+enable_remoting=true
+is_component_build=false
+symbol_level=0
+enable_nacl=false
+remove_webcore_debug_symbols=true
+android_default_version_name="71.0.3578.99"
+android_default_version_code="357809950"
+enable_resource_whitelist_generation=false
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="previously-considered">Previously considered</h2>
+
+<h3 id="brave">Brave</h3>
+<p>System Webview: Unknown - should be possible in theory, but haven’t tested yet.</p>
+
+<p>Links:</p>
+<ul>
+  <li>https://github.com/brave/browser-android-tabs</li>
+</ul>
+
+<p>args.gn: TODO: Update</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Build arguments go here.
+# See "gn args &lt;out_dir&gt; --list" for available build argumentS
+target_os = "android"
+target_cpu = "arm64"
+is_debug = false
+
+android_channel = "stable"
+is_official_build = true
+is_component_build = false
+is_clang = true
+symbol_level = 1
+use_unofficial_version_number = false
+android_default_version_code = "1"
+android_default_version_name = "1.0.0"
+v8_use_external_startup_data = true
+fieldtrial_testing_like_official_build = true
+icu_use_data_file = false
+</code></pre></div></div>
+
+<h3 id="firefox">Firefox</h3>
+<p>System Webview: Not yet, see https://wiki.mozilla.org/Mobile/GeckoView (“GeckoView serves a similar purpose to Android’s built-in WebView, but it has its own APIs and is not a drop in replacement.”)</p>
+:ET
